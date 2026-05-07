@@ -10,7 +10,7 @@ import {
   Truck,
   type LucideIcon,
 } from "lucide-react";
-import heroImage from "../../../public/images/hero-global-logistics.png";
+import heroTrucks from "../../../public/images/hero-logistics-trucks.png";
 
 type Service = {
   title: string;
@@ -70,36 +70,35 @@ export const metadata: Metadata = {
 
 export default function ServicesPage() {
   return (
-    <div className="pb-6 text-white">
-      <section className="site-shell grid gap-8 overflow-hidden rounded-[32px] border border-white/12 bg-deep-blue shadow-2xl shadow-black/30 lg:grid-cols-[0.95fr_1.05fr]">
-        <div className="px-6 py-14 sm:px-10 lg:px-14">
-          <p className="inline-flex rounded-full border border-white/16 bg-white/10 px-4 py-2 text-xs font-black uppercase tracking-[0.2em] text-secondary-100">
-            Alpha Logistics services
+    <div className="pb-8 text-deep-blue">
+      <section className="site-shell soft-panel grid gap-8 overflow-hidden p-6 sm:p-10 lg:grid-cols-[0.9fr_1.1fr] lg:p-14">
+        <div className="self-center">
+          <p className="inline-flex rounded-full bg-white px-4 py-2 text-xs font-black uppercase tracking-[0.18em] text-primary shadow-sm">
+            Our Services
           </p>
-          <h1 className="mt-6 max-w-3xl text-5xl font-black leading-tight tracking-tight sm:text-6xl">
-            Freight services designed for speed, control, and reach.
+          <h1 className="mt-6 max-w-3xl text-5xl font-black leading-tight tracking-[-0.04em] sm:text-6xl">
+            Transport solutions for every business delivery problem.
           </h1>
-          <p className="mt-6 max-w-2xl text-base leading-8 text-slate-300">
-            From urgent air cargo to cross-border haulage and regulated
-            shipments, our model is built around dependable movement, clear
-            documentation, and proactive coordination.
+          <p className="mt-6 max-w-2xl text-base leading-8 text-slate-600">
+            Alpha Logistics coordinates air, ocean, land, customs, and
+            specialized shipments through a clean operating model built for
+            speed and reliability.
           </p>
         </div>
-        <div className="relative min-h-[360px] lg:min-h-full">
+        <div className="relative min-h-[360px]">
           <Image
-            src={heroImage}
-            alt="Alpha Logistics cargo ship for freight services"
+            src={heroTrucks}
+            alt="Alpha Logistics service trucks and freight containers"
             fill
             priority
             placeholder="blur"
             sizes="(max-width: 1024px) 100vw, 620px"
-            className="object-cover object-[62%_center]"
+            className="object-contain"
           />
-          <div className="absolute inset-0 bg-[linear-gradient(90deg,rgba(4,21,34,0.7),rgba(4,21,34,0.05))]" />
         </div>
       </section>
 
-      <section className="site-shell mt-6 rounded-[32px] bg-white px-6 py-14 text-deep-blue shadow-2xl shadow-black/10 sm:px-10 lg:px-14">
+      <section className="site-shell mt-6 rounded-[32px] bg-white px-6 py-12 shadow-2xl shadow-sky-950/10 sm:px-10 lg:px-14">
         <div className="grid gap-5 md:grid-cols-2 xl:grid-cols-3">
           {services.map((service, index) => {
             const Icon = service.icon;
@@ -107,27 +106,20 @@ export default function ServicesPage() {
             return (
               <article
                 key={service.title}
-                className={`group relative min-h-[330px] overflow-hidden rounded-[28px] border border-slate-200 p-6 pb-16 transition duration-300 hover:-translate-y-1 hover:shadow-2xl hover:shadow-primary/12 ${
-                  index === 1
-                    ? "bg-deep-blue text-white"
+                className={`group relative min-h-[320px] overflow-hidden rounded-[28px] p-6 pb-16 transition duration-300 hover:-translate-y-1 hover:shadow-2xl hover:shadow-sky-950/10 ${
+                  index === 0
+                    ? "bg-primary text-white"
                     : "bg-surface-soft text-deep-blue"
                 }`}
               >
-                <div className="absolute inset-x-0 top-0 h-1.5 bg-accent transition group-hover:bg-secondary" />
-                <div
-                  className={`flex size-14 items-center justify-center rounded-[20px] transition duration-300 ${
-                    index === 1
-                      ? "bg-white/10 text-accent"
-                      : "bg-white text-primary shadow-sm"
-                  }`}
-                >
+                <div className="flex size-14 items-center justify-center rounded-[20px] bg-white text-primary shadow-sm">
                   <Icon aria-hidden="true" className="size-7" strokeWidth={2} />
                 </div>
 
                 <h2 className="mt-6 text-2xl font-black">{service.title}</h2>
                 <p
                   className={`mt-3 text-sm leading-6 ${
-                    index === 1 ? "text-slate-300" : "text-slate-600"
+                    index === 0 ? "text-sky-50" : "text-slate-600"
                   }`}
                 >
                   {service.description}
@@ -149,7 +141,7 @@ export default function ServicesPage() {
                 <Link
                   href="/contact"
                   className={`absolute inset-x-6 bottom-6 inline-flex items-center gap-2 text-sm font-black transition group-hover:gap-3 ${
-                    index === 1 ? "text-accent" : "text-primary"
+                    index === 0 ? "text-white" : "text-primary"
                   }`}
                 >
                   Learn More
