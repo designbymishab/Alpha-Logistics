@@ -16,6 +16,10 @@ import {
 } from "lucide-react";
 import containerImage from "../../public/images/hero-black-container.png";
 import oceanImage from "../../public/images/hero-global-logistics.png";
+import airshippingImage from "../../public/images/airshipping.png";
+import seashippingImage from "../../public/images/seashipping.png";
+import landshippingImage from "../../public/images/landshipping.png";
+import poweringlogistics from "../../public/images/poweringlogistics.png";
 
 export const metadata: Metadata = {
   title: "Home",
@@ -44,19 +48,19 @@ const services = [
     title: "Sea Shipping",
     href: "/services",
     icon: Ship,
-    image: oceanImage,
+    image: seashippingImage,
   },
   {
     title: "Air Shipping",
     href: "/services",
     icon: Plane,
-    image: oceanImage,
+    image: airshippingImage,
   },
   {
     title: "Land Shipping",
     href: "/services",
     icon: Truck,
-    image: containerImage,
+    image: landshippingImage,
   },
 ];
 
@@ -363,7 +367,7 @@ export default function Home() {
           <div className="grid gap-4 sm:grid-cols-[1fr_0.72fr]">
             <div className="relative min-h-[360px] overflow-hidden rounded-[34px] bg-[#111111]">
               <Image
-                src={oceanImage}
+                src={poweringlogistics}
                 alt="Alpha Logistics ocean freight"
                 fill
                 placeholder="blur"
