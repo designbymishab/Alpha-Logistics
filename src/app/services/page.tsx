@@ -10,7 +10,7 @@ import {
   Truck,
   type LucideIcon,
 } from "lucide-react";
-import heroTrucks from "../../../public/images/hero-logistics-trucks.png";
+import oceanImage from "../../../public/images/hero-global-logistics.png";
 
 type Service = {
   title: string;
@@ -70,86 +70,107 @@ export const metadata: Metadata = {
 
 export default function ServicesPage() {
   return (
-    <div className="pb-8 text-deep-blue">
-      <section className="site-shell soft-panel grid gap-8 overflow-hidden p-6 sm:p-10 lg:grid-cols-[0.9fr_1.1fr] lg:p-14">
-        <div className="self-center">
-          <p className="inline-flex rounded-full bg-white px-4 py-2 text-xs font-black uppercase tracking-[0.18em] text-primary shadow-sm">
-            Our Services
-          </p>
-          <h1 className="mt-6 max-w-3xl text-5xl font-black leading-tight tracking-[-0.04em] sm:text-6xl">
-            Transport solutions for every business delivery problem.
-          </h1>
-          <p className="mt-6 max-w-2xl text-base leading-8 text-slate-600">
-            Alpha Logistics coordinates air, ocean, land, customs, and
-            specialized shipments through a clean operating model built for
-            speed and reliability.
-          </p>
-        </div>
-        <div className="relative min-h-[360px]">
-          <Image
-            src={heroTrucks}
-            alt="Alpha Logistics service trucks and freight containers"
-            fill
-            priority
-            placeholder="blur"
-            sizes="(max-width: 1024px) 100vw, 620px"
-            className="object-contain"
-          />
+    <div className="text-deep-blue">
+      <section className="section-band-soft overflow-hidden">
+        <div className="site-shell grid gap-8 lg:grid-cols-[0.92fr_1.08fr] lg:items-center">
+          <div>
+            <p className="kicker">Shipping & Logistics Services</p>
+            <h1 className="page-title mt-4 max-w-3xl text-balance">
+              Services designed for every cargo route.
+            </h1>
+            <p className="mt-5 max-w-2xl text-sm leading-7 text-slate-600">
+              Alpha Logistics coordinates air, ocean, land, customs, and
+              specialized shipments through a clear operating model built for
+              speed, compliance, and dependable movement.
+            </p>
+            <Link
+              href="/contact"
+              className="orange-cta mt-7 inline-flex h-12 items-center justify-center rounded-full px-6 text-sm font-black"
+            >
+              Request a Quote
+            </Link>
+          </div>
+          <div className="relative min-h-[320px] overflow-hidden rounded-[34px] bg-deep-blue shadow-2xl shadow-deep-blue/20 sm:min-h-[450px]">
+            <Image
+              src={oceanImage}
+              alt="Alpha Logistics freight services across ocean and air"
+              fill
+              priority
+              placeholder="blur"
+              sizes="(max-width: 1024px) 100vw, 580px"
+              className="object-cover opacity-90"
+            />
+            <div className="absolute inset-0 bg-gradient-to-t from-deep-blue/80 to-transparent" />
+          </div>
         </div>
       </section>
 
-      <section className="site-shell mt-6 rounded-[32px] bg-white px-6 py-12 shadow-2xl shadow-sky-950/10 sm:px-10 lg:px-14">
+      <section className="section-band bg-white">
+        <div className="site-shell">
+          <div className="mb-8 flex flex-col justify-between gap-4 md:flex-row md:items-end">
+            <div>
+              <p className="kicker">Service Overview</p>
+              <h2 className="mt-3 max-w-2xl text-4xl font-black leading-tight sm:text-5xl">
+                Move cargo by air, sea, road, and specialist handling.
+              </h2>
+            </div>
+            <p className="max-w-md text-sm leading-7 text-slate-600">
+              Every service card connects to the quote flow so customers can
+              move from discovery to action quickly on mobile and desktop.
+            </p>
+          </div>
         <div className="grid gap-5 md:grid-cols-2 xl:grid-cols-3">
           {services.map((service, index) => {
             const Icon = service.icon;
+            const featured = index === 4;
 
             return (
               <article
                 key={service.title}
-                className={`group relative min-h-[320px] overflow-hidden rounded-[28px] p-6 pb-16 transition duration-300 hover:-translate-y-1 hover:shadow-2xl hover:shadow-sky-950/10 ${
-                  index === 0
-                    ? "bg-primary text-white"
-                    : "bg-surface-soft text-deep-blue"
+                className={`group flex min-h-[280px] flex-col rounded-[28px] border bg-white p-6 shadow-lg shadow-primary/5 transition hover:-translate-y-1 hover:shadow-xl hover:shadow-primary/10 ${
+                  featured
+                    ? "border-secondary/30 md:col-span-2 xl:col-span-1"
+                    : "border-white/70"
                 }`}
               >
-                <div className="flex size-14 items-center justify-center rounded-[20px] bg-white text-primary shadow-sm">
-                  <Icon aria-hidden="true" className="size-7" strokeWidth={2} />
+                <div className="flex items-start justify-between gap-4">
+                  <span className="flex size-12 items-center justify-center rounded-2xl bg-secondary-100 text-secondary">
+                    <Icon aria-hidden="true" className="size-6" />
+                  </span>
+                  <span className="flex size-9 items-center justify-center rounded-full bg-surface-soft text-deep-blue transition group-hover:bg-secondary group-hover:text-white">
+                    <ArrowRight aria-hidden="true" className="size-4" />
+                  </span>
                 </div>
-
-                <h2 className="mt-6 text-2xl font-black">{service.title}</h2>
-                <p
-                  className={`mt-3 text-sm leading-6 ${
-                    index === 0 ? "text-sky-50" : "text-slate-600"
-                  }`}
-                >
+                <h2 className="mt-8 text-2xl font-black">{service.title}</h2>
+                <p className="mt-3 text-sm leading-6 text-slate-600">
                   {service.description}
                 </p>
-
                 {service.details ? (
                   <div className="mt-5 flex flex-wrap gap-2">
                     {service.details.map((detail) => (
                       <span
                         key={detail}
-                        className="rounded-full bg-white px-3 py-1.5 text-xs font-bold text-slate-600 shadow-sm"
+                        className="rounded-full bg-surface-soft px-3 py-1.5 text-xs font-bold text-slate-600"
                       >
                         {detail}
                       </span>
                     ))}
                   </div>
                 ) : null}
-
                 <Link
                   href="/contact"
-                  className={`absolute inset-x-6 bottom-6 inline-flex items-center gap-2 text-sm font-black transition group-hover:gap-3 ${
-                    index === 0 ? "text-white" : "text-primary"
-                  }`}
+                  className="mt-auto inline-flex items-center gap-2 pt-7 text-sm font-black text-secondary"
                 >
                   Learn More
-                  <ArrowRight aria-hidden="true" className="size-4" />
+                  <ArrowRight
+                    aria-hidden="true"
+                    className="size-4 transition group-hover:translate-x-1"
+                  />
                 </Link>
               </article>
             );
           })}
+        </div>
         </div>
       </section>
     </div>

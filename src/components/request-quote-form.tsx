@@ -91,7 +91,7 @@ export function RequestQuoteForm() {
   return (
     <form
       onSubmit={handleSubmit(onSubmit)}
-      className="rounded-[28px] border border-slate-200 bg-surface-soft p-6 shadow-xl shadow-primary/10"
+      className="rounded-[32px] border border-black/10 bg-white p-5 shadow-xl shadow-black/5 sm:p-6 lg:p-8"
       noValidate
     >
       <div className="flex flex-wrap gap-2">
@@ -102,8 +102,8 @@ export function RequestQuoteForm() {
               index === currentStep
                 ? "bg-deep-blue text-white"
                 : index < currentStep
-                  ? "bg-accent/15 text-accent-700"
-                  : "bg-white text-slate-500"
+                  ? "bg-secondary-100 text-accent"
+                  : "bg-surface-soft text-slate-500"
             }`}
           >
             {index + 1}. {step}
@@ -111,7 +111,7 @@ export function RequestQuoteForm() {
         ))}
       </div>
 
-      <div className="mt-8 min-h-[350px]">
+      <div className="mt-8 min-h-[270px] sm:min-h-[330px]">
         {currentStep === 0 ? (
           <div className="grid gap-5">
             <FieldGroup
@@ -195,7 +195,7 @@ export function RequestQuoteForm() {
               </select>
             </FieldGroup>
 
-            <div className="rounded-[22px] border border-slate-200 bg-white p-5">
+            <div className="rounded-[22px] border border-black/10 bg-surface-soft p-5">
               <p className="text-sm font-bold uppercase tracking-[0.18em] text-secondary">
                 Selected contact
               </p>
@@ -238,7 +238,7 @@ export function RequestQuoteForm() {
               />
             </FieldGroup>
 
-            <div className="rounded-[22px] border border-slate-200 bg-white p-5">
+            <div className="rounded-[22px] border border-black/10 bg-surface-soft p-5">
               <p className="text-sm font-bold uppercase tracking-[0.18em] text-secondary">
                 Request summary
               </p>
@@ -262,7 +262,7 @@ export function RequestQuoteForm() {
           type="button"
           onClick={() => setCurrentStep((step) => Math.max(step - 1, 0))}
           disabled={currentStep === 0}
-          className="inline-flex h-12 items-center justify-center gap-2 rounded-full border border-slate-300 bg-white px-5 text-sm font-black text-primary transition hover:border-primary disabled:cursor-not-allowed disabled:opacity-40"
+          className="inline-flex h-12 items-center justify-center gap-2 rounded-[12px] border border-black/20 bg-white px-5 text-sm font-black text-deep-blue transition hover:border-accent disabled:cursor-not-allowed disabled:opacity-40 sm:w-auto"
         >
           <ArrowLeft aria-hidden="true" className="size-4" />
           Back
@@ -272,7 +272,7 @@ export function RequestQuoteForm() {
           <button
             type="button"
             onClick={goNext}
-            className="orange-cta inline-flex h-12 items-center justify-center gap-2 rounded-full px-6 text-sm font-black transition focus:outline-none focus:ring-2 focus:ring-accent/30"
+            className="orange-cta inline-flex h-12 items-center justify-center gap-2 rounded-[12px] px-6 text-sm font-black transition focus:outline-none focus:ring-2 focus:ring-accent/30 sm:w-auto"
           >
             Continue
             <ArrowRight aria-hidden="true" className="size-4" />
@@ -281,7 +281,7 @@ export function RequestQuoteForm() {
           <button
             type="submit"
             disabled={isSubmitting}
-            className="orange-cta inline-flex h-12 items-center justify-center gap-2 rounded-full px-6 text-sm font-black transition focus:outline-none focus:ring-2 focus:ring-accent/30 disabled:cursor-wait disabled:opacity-70"
+            className="orange-cta inline-flex h-12 items-center justify-center gap-2 rounded-[12px] px-6 text-sm font-black transition focus:outline-none focus:ring-2 focus:ring-accent/30 disabled:cursor-wait disabled:opacity-70 sm:w-auto"
           >
             Submit Request
             <Send aria-hidden="true" className="size-4" />
