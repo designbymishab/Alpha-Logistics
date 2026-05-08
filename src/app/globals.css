@@ -30,7 +30,7 @@
   --color-muted-blue: var(--muted-blue);
   --color-slate-650: #526174;
   --font-sans: "Inter", "Segoe UI", Arial, Helvetica, sans-serif;
-  --font-mono: "SFMono-Regular", Consolas, "Liberation Mono", monospace;
+  --font-mono: "JetBrains Mono", "SFMono-Regular", Consolas, "Liberation Mono", monospace;
 }
 
 body {
@@ -139,10 +139,16 @@ html {
 
 .kicker {
   color: var(--secondary);
+  font-family: "JetBrains Mono", "SFMono-Regular", Consolas, "Liberation Mono", monospace;
   font-size: 0.75rem;
-  font-weight: 900;
+  font-weight: 700;
   letter-spacing: 0.16em;
   text-transform: uppercase;
+}
+
+.mono-accent {
+  font-family: "JetBrains Mono", "SFMono-Regular", Consolas, "Liberation Mono", monospace;
+  letter-spacing: 0;
 }
 
 .page-title {

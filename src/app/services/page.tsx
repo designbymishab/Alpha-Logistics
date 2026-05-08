@@ -22,29 +22,32 @@ type Service = {
 const services: Service[] = [
   {
     title: "Air Freight",
-    description: "Fast solutions for urgent/high-value shipments.",
+    description:
+      "Priority uplift for urgent, high-value, and replenishment cargo where time lost is more expensive than freight.",
     icon: Plane,
   },
   {
     title: "Ocean Freight",
-    description: "FCL, LCL, and temperature-sensitive reefer cargo.",
+    description:
+      "FCL, LCL, and reefer planning for cost-controlled movement across long-haul trade lanes and port handoffs.",
     icon: Ship,
   },
   {
     title: "Land Freight",
-    description: "Cross-border haulage across the GCC.",
+    description:
+      "Cross-border GCC haulage for regional distribution, time-definite trucking, and first-mile or final-mile control.",
     icon: Truck,
   },
   {
     title: "Customs Brokerage",
     description:
-      "Handling documentation, duty calculations, and compliance.",
+      "Documentation, HS-code support, duty calculations, and compliance checks before cargo reaches inspection.",
     icon: ClipboardCheck,
   },
   {
     title: "Specialized Services",
     description:
-      "Project cargo, dangerous goods management, and packing and relocation.",
+      "Controlled handling for project cargo, dangerous goods, packing, relocation, and shipments that need extra supervision.",
     icon: PackageCheck,
     details: [
       "Project Cargo for Oil & Gas and Construction",
@@ -57,7 +60,7 @@ const services: Service[] = [
 export const metadata: Metadata = {
   title: "Services",
   description:
-    "Explore Alpha Logistics services from Alpha Apex Logistics, including air freight, ocean freight, land freight, customs brokerage, and specialized cargo support.",
+    "Explore Alpha Logistics services from Alpha Apex Logistics, including air freight, ocean freight, GCC road freight, customs brokerage, and specialized cargo support.",
   keywords: [
     "Alpha Logistics",
     "air freight services",
@@ -76,12 +79,13 @@ export default function ServicesPage() {
           <div>
             <p className="kicker">Shipping & Logistics Services</p>
             <h1 className="page-title mt-4 max-w-3xl text-balance">
-              Services designed for every cargo route.
+              Freight services built for pressure, precision, and predictable delivery.
             </h1>
             <p className="mt-5 max-w-2xl text-sm leading-7 text-slate-600">
               Alpha Logistics coordinates air, ocean, land, customs, and
-              specialized shipments through a clear operating model built for
-              speed, compliance, and dependable movement.
+              specialized cargo through one operating rhythm, helping clients
+              compare cost, speed, risk, and compliance before committing to a
+              route.
             </p>
             <Link
               href="/contact"
@@ -111,12 +115,13 @@ export default function ServicesPage() {
             <div>
               <p className="kicker">Service Overview</p>
               <h2 className="mt-3 max-w-2xl text-4xl font-black leading-tight sm:text-5xl">
-                Move cargo by air, sea, road, and specialist handling.
+                Choose the right mode for the commercial moment.
               </h2>
             </div>
             <p className="max-w-md text-sm leading-7 text-slate-600">
-              Every service card connects to the quote flow so customers can
-              move from discovery to action quickly on mobile and desktop.
+              Air freight protects urgency, ocean freight protects unit cost,
+              road freight protects regional control, and brokerage protects
+              the clearance timeline.
             </p>
           </div>
         <div className="grid gap-5 md:grid-cols-2 xl:grid-cols-3">

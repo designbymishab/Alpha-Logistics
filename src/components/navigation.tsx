@@ -22,7 +22,7 @@ export function Navigation() {
             <span className="bg-accent" />
           </span>
           <span className="sr-only">Alpha Apex Logistics</span>
-          <span className="hidden text-sm font-black tracking-normal sm:block">
+          <span className="mono-accent hidden text-sm font-black tracking-normal sm:block">
             Alpha Logistics
           </span>
         </Link>

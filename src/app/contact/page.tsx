@@ -8,19 +8,19 @@ const representativeBenefits = [
   {
     title: "Tailored solutions",
     description:
-      "Recommendations shaped around shipment urgency, cargo type, and destination.",
+      "Routing recommendations shaped around shipment urgency, cargo type, destination risk, and budget.",
     icon: Sparkles,
   },
   {
     title: "Clear ownership",
     description:
-      "A primary contact coordinates updates from quote to final delivery.",
+      "A primary contact coordinates quote details, route decisions, status updates, and exception handling.",
     icon: Route,
   },
   {
     title: "Compliance-aware support",
     description:
-      "Guidance aligned with documentation, duty, and regulatory requirements.",
+      "Guidance aligned with documentation, duty exposure, regulated cargo requirements, and customs readiness.",
     icon: ShieldCheck,
   },
 ];
@@ -46,11 +46,12 @@ export default function ContactPage() {
           <div>
             <p className="kicker">Contact Us</p>
             <h1 className="page-title mt-4 max-w-3xl">
-              Request a quote with a team that knows your route.
+              Request a quote with a team that thinks beyond the rate.
             </h1>
             <p className="mt-5 max-w-2xl text-sm leading-7 text-slate-600">
-              Share your shipment requirements and our team will align the
-              right service, timeline, and support model for your cargo.
+              Share your shipment requirements and we will align the right
+              mode, timeline, clearance path, and support model before your
+              cargo enters the supply chain.
             </p>
           </div>
 
@@ -69,7 +70,9 @@ export default function ContactPage() {
               <p className="text-xs font-black uppercase tracking-[0.16em] text-secondary">
                 Qatar HQ
               </p>
-              <p className="mt-2 text-xl font-black">+974 4142 4247</p>
+              <p className="mono-accent mt-2 text-xl font-black">
+                +974 4142 4247
+              </p>
             </div>
           </div>
         </div>
@@ -92,7 +95,8 @@ export default function ContactPage() {
             <p className="mt-5 text-sm leading-7 text-white/68">
               Every Alpha Apex Logistics client is supported by a dedicated
               representative who understands their cargo profile, preferred
-              lanes, documentation requirements, and delivery expectations.
+              lanes, documentation requirements, delivery expectations, and
+              commercial priorities.
             </p>
 
             <div className="mt-8 grid gap-4">

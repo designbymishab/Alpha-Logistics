@@ -79,12 +79,12 @@ export default function BranchesPage() {
           <div>
             <p className="kicker">Global Branches</p>
             <h1 className="page-title mt-4 max-w-3xl">
-              Local teams connected to global freight lanes.
+              Regional offices connected to resilient trade lanes.
             </h1>
             <p className="mt-5 max-w-2xl text-sm leading-7 text-slate-600">
-              Find Alpha Logistics branch coverage across Qatar, the GCC, Asia,
-              and East Africa, with contact details for the right regional
-              office.
+              Alpha Logistics gives clients a practical point of access across
+              Qatar, the GCC, South Asia, Southeast Asia, and East Africa, with
+              local contacts supporting international movement.
             </p>
           </div>
 
@@ -103,7 +103,7 @@ export default function BranchesPage() {
                   className="mt-4 inline-flex items-center gap-2 text-sm font-black text-secondary"
                 >
                   <Phone aria-hidden="true" className="size-4" />
-                  +974 4142 4247
+                  <span className="mono-accent">+974 4142 4247</span>
                 </a>
               </div>
             </div>
@@ -117,12 +117,13 @@ export default function BranchesPage() {
             <div>
               <p className="kicker">Locations</p>
               <h2 className="mt-3 max-w-2xl text-4xl font-black leading-tight sm:text-5xl">
-                Regional offices with clear contact routes.
+                Clear contacts for faster shipment decisions.
               </h2>
             </div>
             <p className="max-w-md text-sm leading-7 text-slate-600">
-              Phone links are mobile-ready where numbers are available, with
-              email and named contacts shown for applicable offices.
+              Use the closest branch for origin details, documentation
+              readiness, and shipment coordination. Phone links are mobile-ready
+              where numbers are available.
             </p>
           </div>
         <div className="grid gap-4 md:grid-cols-2 xl:grid-cols-3">
@@ -151,7 +152,7 @@ export default function BranchesPage() {
                     className="inline-flex items-center gap-2 font-black text-secondary"
                   >
                     <Phone aria-hidden="true" className="size-4" />
-                    {branch.phone}
+                    <span className="mono-accent">{branch.phone}</span>
                   </a>
                 ) : (
                   <span className="inline-flex items-center gap-2 font-semibold text-slate-500">
@@ -174,7 +175,7 @@ export default function BranchesPage() {
                     className="inline-flex items-center gap-2 break-all font-black text-deep-blue"
                   >
                     <Mail aria-hidden="true" className="size-4 text-secondary" />
-                    {branch.contactEmail}
+                    <span className="mono-accent">{branch.contactEmail}</span>
                   </a>
                 ) : null}
               </div>

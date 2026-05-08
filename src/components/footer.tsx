@@ -19,15 +19,15 @@ export function Footer() {
               <span className="bg-accent" />
             </span>
             <div>
-              <p className="font-black">Alpha Apex Logistics</p>
+              <p className="mono-accent font-black">Alpha Apex Logistics</p>
               <p className="text-sm font-medium text-white/60">
-                Alpha Logistics for ocean, air, and GCC freight.
+                Route-aware freight forwarding from Qatar.
               </p>
             </div>
           </div>
           <p className="mt-5 max-w-md text-sm leading-6 text-white/62">
-            Delivering dependable logistics support from Qatar to regional and
-            international trade lanes.
+            Built for clients who need reliable movement, better documentation,
+            and one accountable team across air, ocean, road, and customs.
           </p>
         </div>
 
@@ -55,7 +55,7 @@ export function Footer() {
           <div className="mt-4 space-y-2 text-sm leading-6 text-white/62">
             <p>Office 212, Al Suhaim Tower</p>
             <p>Doha, Qatar</p>
-            <a className="font-black text-secondary" href="tel:+97441424247">
+            <a className="mono-accent font-black text-secondary" href="tel:+97441424247">
               +974 4142 4247
             </a>
           </div>
@@ -66,7 +66,7 @@ export function Footer() {
             Copyright {new Date().getFullYear()} Alpha Apex Logistics. All
             rights reserved.
           </p>
-          <p>Built for reliable global movement.</p>
+          <p className="mono-accent">DOH / GCC / GLOBAL</p>
           </div>
         </div>
       </div>

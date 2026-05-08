@@ -98,7 +98,7 @@ export function RequestQuoteForm() {
         {steps.map((step, index) => (
           <span
             key={step}
-            className={`rounded-sm px-3 py-1.5 text-xs font-bold ${
+            className={`mono-accent rounded-sm px-3 py-1.5 text-xs font-bold ${
               index === currentStep
                 ? "bg-deep-blue text-white"
                 : index < currentStep
@@ -196,7 +196,7 @@ export function RequestQuoteForm() {
             </FieldGroup>
 
             <div className="rounded-[22px] border border-black/10 bg-surface-soft p-5">
-              <p className="text-sm font-bold uppercase tracking-[0.18em] text-secondary">
+              <p className="mono-accent text-sm font-bold uppercase tracking-[0.18em] text-secondary">
                 Selected contact
               </p>
               <div className="mt-4 grid gap-2 text-sm text-slate-650">
@@ -210,7 +210,9 @@ export function RequestQuoteForm() {
                 </p>
                 <p>
                   <span className="font-bold text-slate-950">Email:</span>{" "}
-                  {formValues.email || "Pending"}
+                  <span className="mono-accent">
+                    {formValues.email || "Pending"}
+                  </span>
                 </p>
               </div>
             </div>
@@ -239,7 +241,7 @@ export function RequestQuoteForm() {
             </FieldGroup>
 
             <div className="rounded-[22px] border border-black/10 bg-surface-soft p-5">
-              <p className="text-sm font-bold uppercase tracking-[0.18em] text-secondary">
+              <p className="mono-accent text-sm font-bold uppercase tracking-[0.18em] text-secondary">
                 Request summary
               </p>
               <div className="mt-4 grid gap-2 text-sm text-slate-650">

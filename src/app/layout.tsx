@@ -1,6 +1,16 @@
 import type { Metadata } from "next";
 import { Footer } from "@/components/footer";
 import { Navigation } from "@/components/navigation";
+import "@fontsource/inter/400.css";
+import "@fontsource/inter/500.css";
+import "@fontsource/inter/600.css";
+import "@fontsource/inter/700.css";
+import "@fontsource/inter/800.css";
+import "@fontsource/inter/900.css";
+import "@fontsource/jetbrains-mono/400.css";
+import "@fontsource/jetbrains-mono/500.css";
+import "@fontsource/jetbrains-mono/600.css";
+import "@fontsource/jetbrains-mono/700.css";
 import "./globals.css";
 
 export const metadata: Metadata = {
@@ -9,7 +19,7 @@ export const metadata: Metadata = {
     template: "%s | Alpha Logistics",
   },
   description:
-    "Alpha Logistics freight forwarding, customs brokerage, and supply chain coordination from Qatar across the GCC and beyond.",
+    "Alpha Logistics delivers data-aware freight forwarding, customs brokerage, and resilient supply chain coordination from Qatar across the GCC and beyond.",
   keywords: [
     "Alpha Logistics",
     "Alpha Apex Logistics",

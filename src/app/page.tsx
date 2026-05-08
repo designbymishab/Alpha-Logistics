@@ -20,7 +20,7 @@ import oceanImage from "../../public/images/hero-global-logistics.png";
 export const metadata: Metadata = {
   title: "Home",
   description:
-    "Alpha Logistics by Alpha Apex Logistics delivers global supply chain solutions, freight forwarding, and GCC logistics support with expert teams and carrier partnerships.",
+    "Alpha Logistics by Alpha Apex Logistics delivers resilient freight forwarding, customs coordination, and data-aware supply chain solutions across Qatar, the GCC, and global trade lanes.",
   keywords: [
     "Alpha Logistics",
     "global supply chain solution",
@@ -30,7 +30,14 @@ export const metadata: Metadata = {
   ],
 };
 
-const partners = ["Qatar HQ", "GCC Road", "Air Cargo", "Ocean FCL", "Reefer", "Customs"];
+const partners = [
+  "QTR-HQ",
+  "GCC-ROAD",
+  "AIR-CARGO",
+  "OCEAN-FCL",
+  "REEFER",
+  "CUSTOMS",
+];
 
 const services = [
   {
@@ -54,9 +61,9 @@ const services = [
 ];
 
 const businessPoints = [
-  "Nationwide carrier network",
-  "Fully-featured logistics support",
-  "Exception tracking and live support",
+  "Multi-carrier routing for volatile ocean and air markets",
+  "Customs-ready documentation before cargo reaches the border",
+  "Single point of contact for exceptions, status, and decisions",
 ];
 
 const locations = [
@@ -72,19 +79,19 @@ const whyChooseUs = [
   {
     title: "Strong Global Partnerships",
     description:
-      "Top-tier carrier relationships help Alpha Logistics move cargo across dependable international trade lanes.",
+      "Carrier and agent relationships help Alpha Logistics protect capacity across high-demand air, ocean, and GCC road lanes.",
     icon: Globe2,
   },
   {
     title: "Expert Team",
     description:
-      "Freight specialists support documentation, customs needs, routing, and shipment updates from one operating rhythm.",
+      "Freight specialists translate routing, documentation, duty, and compliance decisions into a clear shipment plan.",
     icon: UsersRound,
   },
   {
     title: "Compliance First",
     description:
-      "Structured handling for customs brokerage, regulated cargo, and cross-border movement keeps shipments controlled.",
+      "Structured brokerage support reduces avoidable border delays for regulated cargo, project freight, and regional distribution.",
     icon: ShieldCheck,
   },
 ];
@@ -105,8 +112,9 @@ export default function Home() {
               </span>
             </h1>
             <p className="mx-auto mt-5 max-w-2xl text-sm leading-7 text-slate-600 sm:text-base">
-              A leading international freight forwarder with over a decade of
-              experience across the GCC and beyond.
+              A Qatar-based international freight forwarder helping ambitious
+              businesses move time-sensitive, regulated, and high-value cargo
+              across the GCC and beyond.
             </p>
 
             <div className="mx-auto mt-7 grid max-w-xl gap-2 rounded-[18px] border border-black/12 bg-white p-2 shadow-xl shadow-black/8 sm:grid-cols-[1fr_1fr_48px]">
@@ -173,7 +181,7 @@ export default function Home() {
                   className="inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/6 px-3 py-2 text-[0.7rem] font-black text-white/68"
                 >
                   <span className="size-1.5 rounded-full bg-secondary" />
-                  {partner}
+                  <span className="mono-accent">{partner}</span>
                 </span>
               ))}
             </div>
@@ -192,10 +200,10 @@ export default function Home() {
                   <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/10 to-transparent" />
                   <div className="absolute bottom-5 left-5 right-5">
                     <p className="text-xs font-black uppercase tracking-[0.18em] text-secondary">
-                      GCC and global routes
+                      Route intelligence
                     </p>
                     <p className="mt-2 max-w-sm text-2xl font-black leading-tight">
-                      Ocean, air, land, and customs in one operating flow.
+                      Ocean, air, land, and customs aligned before cargo moves.
                     </p>
                   </div>
                 </div>
@@ -214,7 +222,9 @@ export default function Home() {
                     </div>
                   </div>
                   <div className="rounded-[26px] bg-[#fff0e8] p-5 text-[#111111]">
-                    <p className="text-4xl font-black text-secondary">10+</p>
+                    <p className="mono-accent text-4xl font-black text-secondary">
+                      10+
+                    </p>
                     <p className="mt-1 text-xs font-black uppercase leading-5 tracking-[0.14em] text-[#111111]/70">
                       Years across GCC lanes
                     </p>
@@ -231,18 +241,21 @@ export default function Home() {
                   Delivery Logistics Solution
                 </h2>
                 <p className="mt-5 max-w-xl text-sm leading-7 text-white/64">
-                  We coordinate ocean, air, land, customs, and specialized
-                  cargo movement with dedicated support from Qatar across the
-                  GCC and beyond.
+                  Global trade is growing, but capacity, tariffs, and route
+                  disruption make execution harder. Alpha Logistics gives
+                  clients a calmer operating model: practical routing, clear
+                  documentation, and accountable support from quote to delivery.
                 </p>
 
                 <div className="mt-7 grid gap-3 sm:grid-cols-3">
-                  {["Air", "Ocean", "Land"].map((mode) => (
+                  {["AIR", "OCEAN", "LAND"].map((mode) => (
                     <div
                       key={mode}
                       className="rounded-[18px] border border-white/10 bg-white/6 p-4"
                     >
-                      <p className="text-2xl font-black text-white">{mode}</p>
+                      <p className="mono-accent text-2xl font-black text-white">
+                        {mode}
+                      </p>
                       <p className="mt-1 text-xs font-bold text-white/48">
                         freight support
                       </p>
@@ -277,6 +290,10 @@ export default function Home() {
             <h2 className="text-4xl font-black leading-tight text-[#111111] sm:text-5xl">
               Shipping & Logistics Services
             </h2>
+            <p className="mx-auto mt-4 max-w-2xl text-sm leading-7 text-slate-600">
+              Choose the mode that protects your margin, timeline, and cargo
+              condition, then let one team coordinate the handoffs.
+            </p>
           </div>
 
           <div className="mt-8 grid gap-4 md:grid-cols-3">
@@ -324,8 +341,10 @@ export default function Home() {
               Powering logistics across business
             </h2>
             <p className="mt-5 max-w-xl text-sm leading-7 text-slate-600">
-              Alpha Logistics connects routing, communication, and shipment
-              control so every client gets a practical operating partner.
+              Air cargo reached record volumes in 2025 while maritime trade
+              faced slower growth and route pressure. Our role is to help
+              clients stay flexible, compare options, and avoid late decisions
+              that create cost.
             </p>
             <div className="mt-7 max-w-xl divide-y divide-black/10 border-y border-black/10">
               {businessPoints.map((point) => (
@@ -356,13 +375,13 @@ export default function Home() {
             <div className="grid gap-4">
               <div className="rounded-[28px] bg-[#111111] p-6 text-white">
                 <Box aria-hidden="true" className="size-9 text-secondary" />
-                <p className="mt-8 text-4xl font-black">10+</p>
+                <p className="mono-accent mt-8 text-4xl font-black">10+</p>
                 <p className="mt-2 text-sm font-bold text-white/62">
                   Years of regional freight experience
                 </p>
               </div>
               <div className="rounded-[28px] bg-secondary p-6 text-white">
-                <p className="text-4xl font-black">24/7</p>
+                <p className="mono-accent text-4xl font-black">24/7</p>
                 <p className="mt-2 text-sm font-bold text-white/78">
                   Shipment coordination support
                 </p>
@@ -376,8 +395,12 @@ export default function Home() {
         <div className="site-shell">
           <div className="mx-auto max-w-3xl text-center">
             <h2 className="text-4xl font-black leading-tight text-[#111111] sm:text-5xl">
-              Find Alpha Logistics locations worldwide
+              Find Alpha Logistics locations across key trade lanes
             </h2>
+            <p className="mx-auto mt-4 max-w-2xl text-sm leading-7 text-slate-600">
+              Qatar HQ anchors a network reaching the GCC, South Asia,
+              Southeast Asia, and East Africa.
+            </p>
           </div>
 
           <div className="relative mt-10 overflow-hidden rounded-[34px] bg-white p-5 shadow-xl shadow-black/6 sm:p-8">
@@ -398,7 +421,7 @@ export default function Home() {
                     {country}
                   </h3>
                   <p className="mt-1 text-sm font-bold text-slate-500">
-                    {label}
+                    <span className="mono-accent">{label}</span>
                   </p>
                 </Link>
               ))}
@@ -425,13 +448,17 @@ export default function Home() {
                 <h2 className="mt-4 text-4xl font-black leading-tight sm:text-5xl">
                   Track or calculate your shipments
                 </h2>
+                <p className="mt-4 max-w-md text-sm leading-7 text-white/68">
+                  Send shipment details early so our team can identify the
+                  right service, documentation path, and delivery expectation.
+                </p>
               </div>
             </div>
             <div className="bg-white p-5 text-deep-blue sm:p-7">
               <h3 className="text-2xl font-black">Quickly Track your Shipments</h3>
               <div className="mt-6 grid gap-3">
-                <div className="rounded-[14px] border border-black/10 px-4 py-3 text-sm font-bold text-slate-500">
-                  Enter your shipment code
+                <div className="mono-accent rounded-[14px] border border-black/10 px-4 py-3 text-sm font-bold text-slate-500">
+                  ALX-QA-DOH-0001
                 </div>
                 <div className="rounded-[14px] border border-black/10 px-4 py-3 text-sm font-bold text-slate-500">
                   Select your service
