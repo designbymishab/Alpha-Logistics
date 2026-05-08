@@ -48,14 +48,14 @@ export default function ContactPage() {
             <h1 className="page-title mt-4 max-w-3xl">
               Request a quote with a team that thinks beyond the rate.
             </h1>
-            <p className="mt-5 max-w-2xl text-sm leading-7 text-slate-600">
+            <p className="mt-5 max-w-2xl text-sm leading-7 text-cool-gray">
               Share your shipment requirements and we will align the right
               mode, timeline, clearance path, and support model before your
               cargo enters the supply chain.
             </p>
           </div>
 
-          <div className="relative min-h-[320px] overflow-hidden rounded-[34px] bg-deep-blue shadow-2xl shadow-deep-blue/20 sm:min-h-[430px]">
+          <div className="relative min-h-[320px] overflow-hidden rounded-2xl bg-deep-blue shadow-2xl shadow-deep-blue/20 sm:min-h-[430px]">
             <Image
               src={containerImage}
               alt="Alpha Logistics black shipping container contact visual"
@@ -65,8 +65,8 @@ export default function ContactPage() {
               sizes="(max-width: 1024px) 100vw, 560px"
               className="object-contain object-center p-4"
             />
-            <div className="absolute inset-0 bg-[radial-gradient(circle_at_78%_18%,rgba(255,107,26,.22),transparent_22rem)]" />
-            <div className="absolute bottom-5 left-5 right-5 rounded-[24px] bg-white p-4 shadow-xl sm:left-auto sm:w-[300px]">
+            <div className="absolute inset-0 bg-[radial-gradient(circle_at_78%_18%,rgba(13,71,161,.22),transparent_22rem)]" />
+            <div className="absolute bottom-5 left-5 right-5 rounded-xl bg-white p-4 shadow-xl sm:left-auto sm:w-[300px]">
               <p className="text-xs font-black uppercase tracking-[0.16em] text-secondary">
                 Qatar HQ
               </p>
@@ -82,11 +82,11 @@ export default function ContactPage() {
         <div className="site-shell grid gap-6 lg:grid-cols-[1.08fr_0.92fr] lg:items-start">
           <RequestQuoteForm />
 
-          <aside className="rounded-[32px] bg-deep-blue p-6 text-white shadow-2xl shadow-deep-blue/20 sm:p-8 lg:sticky lg:top-28">
-            <span className="flex size-14 items-center justify-center rounded-full bg-secondary text-white">
+          <aside className="rounded-xl bg-deep-blue p-6 text-white shadow-2xl shadow-deep-blue/20 sm:p-8 lg:sticky lg:top-28">
+            <span className="flex size-14 items-center justify-center rounded-full bg-gold-accent text-white">
               <Headset aria-hidden="true" className="size-7" />
             </span>
-            <p className="mt-6 text-sm font-black uppercase tracking-[0.22em] text-secondary">
+            <p className="mt-6 text-sm font-black uppercase tracking-[0.22em] text-gold-accent">
               Dedicated Customer Representative
             </p>
             <h2 className="mt-3 text-3xl font-black leading-tight sm:text-4xl">
@@ -108,7 +108,7 @@ export default function ContactPage() {
                     key={item.title}
                     className="grid grid-cols-[44px_1fr] gap-4 border-t border-white/15 pt-4"
                   >
-                    <span className="flex size-11 items-center justify-center rounded-full bg-white/10 text-secondary">
+                    <span className="flex size-11 items-center justify-center rounded-full bg-white/10 text-gold-accent">
                       <Icon aria-hidden="true" className="size-5" />
                     </span>
                     <div>

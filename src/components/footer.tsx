@@ -8,15 +8,15 @@ const footerLinks = [
 
 export function Footer() {
   return (
-    <footer id="contact" className="border-t border-black/10 bg-deep-blue text-white">
+    <footer id="contact" className="border-t border-white/10 bg-deep-blue text-white">
       <div className="site-shell grid gap-10 py-12 md:grid-cols-[1.3fr_1fr_1fr]">
         <div>
           <div className="flex items-center gap-3">
             <span className="grid size-11 grid-cols-2 overflow-hidden rounded-br-[18px] rounded-tl-[18px]">
               <span className="bg-white" />
               <span className="bg-secondary" />
-              <span className="bg-[#2A9D8F]" />
-              <span className="bg-accent" />
+              <span className="bg-cyan-accent" />
+              <span className="bg-gold-accent" />
             </span>
             <div>
               <p className="mono-accent font-black">Alpha Apex Logistics</p>
@@ -40,7 +40,7 @@ export function Footer() {
               <Link
                 key={item.href}
                 href={item.href}
-                className="transition hover:text-secondary"
+                className="transition hover:text-gold-accent"
               >
                 {item.label}
               </Link>
@@ -55,7 +55,7 @@ export function Footer() {
           <div className="mt-4 space-y-2 text-sm leading-6 text-white/62">
             <p>Office 212, Al Suhaim Tower</p>
             <p>Doha, Qatar</p>
-            <a className="mono-accent font-black text-secondary" href="tel:+97441424247">
+            <a className="mono-accent font-black text-gold-accent" href="tel:+97441424247">
               +974 4142 4247
             </a>
           </div>

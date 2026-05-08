@@ -1,4 +1,8 @@
+"use client";
+
+import { useState } from "react";
 import Link from "next/link";
+import { Menu, X } from "lucide-react";
 
 const navigationItems = [
   { label: "Home", href: "/" },
@@ -8,8 +12,10 @@ const navigationItems = [
 ];
 
 export function Navigation() {
+  const [isOpen, setIsOpen] = useState(false);
+
   return (
-    <header className="sticky top-0 z-50 border-b border-black/10 bg-white/92 backdrop-blur-xl">
+    <header className="sticky top-0 z-50 border-b border-border-color/20 bg-white/95 backdrop-blur-xl">
       <nav
         className="site-shell flex flex-wrap items-center justify-between gap-3 py-3 text-deep-blue md:flex-nowrap md:py-4"
         aria-label="Primary navigation"
@@ -18,8 +24,8 @@ export function Navigation() {
           <span className="grid size-9 grid-cols-2 overflow-hidden rounded-br-[16px] rounded-tl-[16px]">
             <span className="bg-deep-blue" />
             <span className="bg-secondary" />
-            <span className="bg-[#2A9D8F]" />
-            <span className="bg-accent" />
+            <span className="bg-cyan-accent" />
+            <span className="bg-gold-accent" />
           </span>
           <span className="sr-only">Alpha Apex Logistics</span>
           <span className="mono-accent hidden text-sm font-black tracking-normal sm:block">
@@ -27,12 +33,26 @@ export function Navigation() {
           </span>
         </Link>
 
-        <div className="order-3 flex w-full min-w-0 items-center gap-1 overflow-x-auto border-t border-black/10 pt-3 text-xs font-black text-deep-blue md:order-2 md:w-auto md:flex-1 md:justify-center md:border-t-0 md:pt-0">
+        {/* Desktop nav */}
+        <div className="order-3 hidden items-center gap-1 md:flex md:order-2 md:w-auto md:flex-1 md:justify-center">
           {navigationItems.map((item) => (
             <Link
               key={item.href}
               href={item.href}
-              className="shrink-0 rounded-full px-3 py-2 transition hover:bg-surface-soft hover:text-secondary focus:outline-none focus:ring-2 focus:ring-secondary/30 sm:px-4"
+              className="rounded-full px-4 py-2 text-xs font-black transition hover:bg-surface-soft hover:text-secondary focus:outline-none focus:ring-2 focus:ring-secondary/30"
+            >
+              {item.label}
+            </Link>
+          ))}
+        </div>
+
+        <div className="order-3 flex w-full items-center gap-2 md:hidden">
+          {navigationItems.map((item) => (
+            <Link
+              key={item.href}
+              href={item.href}
+              onClick={() => setIsOpen(false)}
+              className="flex-1 rounded-lg px-3 py-2.5 text-center text-xs font-black transition hover:bg-surface-soft hover:text-secondary focus:outline-none focus:ring-2 focus:ring-secondary/30"
             >
               {item.label}
             </Link>
@@ -41,7 +61,7 @@ export function Navigation() {
 
         <Link
           href="/contact"
-          className="orange-cta order-2 inline-flex shrink-0 rounded-full px-4 py-2.5 text-xs font-black transition focus:outline-none focus:ring-2 focus:ring-secondary/30 md:order-3 md:px-5 md:py-3"
+          className="cta-gold order-2 inline-flex shrink-0 rounded-full px-4 py-2.5 text-xs font-black transition focus:outline-none focus:ring-2 focus:ring-gold-accent/30 md:order-3 md:px-5 md:py-3"
         >
           Get a Quote
         </Link>

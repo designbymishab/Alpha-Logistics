@@ -81,26 +81,26 @@ export default function BranchesPage() {
             <h1 className="page-title mt-4 max-w-3xl">
               Regional offices connected to resilient trade lanes.
             </h1>
-            <p className="mt-5 max-w-2xl text-sm leading-7 text-slate-600">
+            <p className="mt-5 max-w-2xl text-sm leading-7 text-cool-gray">
               Alpha Logistics gives clients a practical point of access across
               Qatar, the GCC, South Asia, Southeast Asia, and East Africa, with
               local contacts supporting international movement.
             </p>
           </div>
 
-          <div className="relative min-h-[360px] overflow-hidden rounded-[34px] bg-white p-5 shadow-2xl shadow-deep-blue/10 sm:min-h-[460px]">
+          <div className="relative min-h-[360px] overflow-hidden rounded-2xl bg-white p-5 shadow-2xl shadow-deep-blue/10 sm:min-h-[460px]">
             <div className="absolute inset-0 opacity-70">
-              <div className="h-full bg-[radial-gradient(circle_at_18%_50%,#ff6b1a_0_5px,transparent_6px),radial-gradient(circle_at_45%_42%,#1b4d89_0_5px,transparent_6px),radial-gradient(circle_at_58%_62%,#2A9D8F_0_5px,transparent_6px),radial-gradient(circle_at_72%_38%,#7f1d1d_0_5px,transparent_6px),radial-gradient(circle_at_82%_66%,#ff6b1a_0_5px,transparent_6px),linear-gradient(120deg,transparent_18%,rgba(27,77,137,.12)_18%_19%,transparent_19%_46%,rgba(42,157,143,.16)_46%_47%,transparent_47%)]" />
+              <div className="h-full bg-[radial-gradient(circle_at_18%_50%,#0D47A1_0_5px,transparent_6px),radial-gradient(circle_at_45%_42%,#1565C0_0_5px,transparent_6px),radial-gradient(circle_at_58%_62%,#00BCD4_0_5px,transparent_6px),radial-gradient(circle_at_72%_38%,#D4A017_0_5px,transparent_6px),radial-gradient(circle_at_82%_66%,#0D47A1_0_5px,transparent_6px),linear-gradient(120deg,transparent_18%,rgba(13,71,161,.12)_18%_19%,transparent_19%_46%,rgba(0,188,212,.16)_46%_47%,transparent_47%)]" />
             </div>
             <div className="relative flex h-full flex-col justify-end">
-              <div className="max-w-md rounded-[24px] bg-deep-blue p-5 text-white shadow-xl shadow-primary/10">
+              <div className="max-w-md rounded-xl bg-deep-blue p-5 text-white shadow-xl shadow-primary/10">
                 <p className="kicker">Qatar HQ</p>
                 <h2 className="mt-2 text-2xl font-black sm:text-3xl">
                   Office 212, Al Suhaim Tower, Doha
                 </h2>
                 <a
                   href="tel:+97441424247"
-                  className="mt-4 inline-flex items-center gap-2 text-sm font-black text-secondary"
+                  className="mt-4 inline-flex items-center gap-2 text-sm font-black text-gold-accent"
                 >
                   <Phone aria-hidden="true" className="size-4" />
                   <span className="mono-accent">+974 4142 4247</span>
@@ -120,7 +120,7 @@ export default function BranchesPage() {
                 Clear contacts for faster shipment decisions.
               </h2>
             </div>
-            <p className="max-w-md text-sm leading-7 text-slate-600">
+            <p className="max-w-md text-sm leading-7 text-cool-gray">
               Use the closest branch for origin details, documentation
               readiness, and shipment coordination. Phone links are mobile-ready
               where numbers are available.
@@ -130,7 +130,7 @@ export default function BranchesPage() {
           {branches.map((branch) => (
             <article
               key={branch.country}
-              className="flex min-h-[300px] flex-col rounded-[28px] border border-black/10 bg-white p-6 shadow-lg shadow-primary/5"
+              className="card"
             >
               <div className="flex items-start justify-between gap-4">
                 <div>
@@ -139,12 +139,12 @@ export default function BranchesPage() {
                     {branch.country}
                   </h2>
                 </div>
-                <span className="flex size-12 shrink-0 items-center justify-center rounded-2xl bg-deep-blue text-white">
+                <span className="flex size-12 shrink-0 items-center justify-center rounded-xl bg-deep-blue text-white">
                   <MapPin aria-hidden="true" className="size-5" />
                 </span>
               </div>
 
-              <div className="mt-6 grid gap-3 text-sm leading-6 text-slate-600">
+              <div className="mt-6 grid gap-3 text-sm leading-6 text-cool-gray">
                 <p>{branch.address}</p>
                 {branch.phone && branch.phoneHref ? (
                   <a
@@ -155,7 +155,7 @@ export default function BranchesPage() {
                     <span className="mono-accent">{branch.phone}</span>
                   </a>
                 ) : (
-                  <span className="inline-flex items-center gap-2 font-semibold text-slate-500">
+                  <span className="inline-flex items-center gap-2 font-semibold text-cool-gray">
                     <Phone aria-hidden="true" className="size-4" />
                     Phone to be confirmed
                   </span>

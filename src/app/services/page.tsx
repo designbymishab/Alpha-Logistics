@@ -81,7 +81,7 @@ export default function ServicesPage() {
             <h1 className="page-title mt-4 max-w-3xl text-balance">
               Freight services built for pressure, precision, and predictable delivery.
             </h1>
-            <p className="mt-5 max-w-2xl text-sm leading-7 text-slate-600">
+            <p className="mt-5 max-w-2xl text-sm leading-7 text-cool-gray">
               Alpha Logistics coordinates air, ocean, land, customs, and
               specialized cargo through one operating rhythm, helping clients
               compare cost, speed, risk, and compliance before committing to a
@@ -89,12 +89,12 @@ export default function ServicesPage() {
             </p>
             <Link
               href="/contact"
-              className="orange-cta mt-7 inline-flex h-12 items-center justify-center rounded-full px-6 text-sm font-black"
+              className="cta-primary mt-7 inline-flex h-12 items-center justify-center rounded-full px-6 text-sm font-black"
             >
               Request a Quote
             </Link>
           </div>
-          <div className="relative min-h-[320px] overflow-hidden rounded-[34px] bg-deep-blue shadow-2xl shadow-deep-blue/20 sm:min-h-[450px]">
+          <div className="relative min-h-[320px] overflow-hidden rounded-2xl bg-deep-blue shadow-2xl shadow-deep-blue/20 sm:min-h-[450px]">
             <Image
               src={oceanImage}
               alt="Alpha Logistics freight services across ocean and air"
@@ -118,7 +118,7 @@ export default function ServicesPage() {
                 Choose the right mode for the commercial moment.
               </h2>
             </div>
-            <p className="max-w-md text-sm leading-7 text-slate-600">
+            <p className="max-w-md text-sm leading-7 text-cool-gray">
               Air freight protects urgency, ocean freight protects unit cost,
               road freight protects regional control, and brokerage protects
               the clearance timeline.
@@ -132,22 +132,22 @@ export default function ServicesPage() {
             return (
               <article
                 key={service.title}
-                className={`group flex min-h-[280px] flex-col rounded-[28px] border bg-white p-6 shadow-lg shadow-primary/5 transition hover:-translate-y-1 hover:shadow-xl hover:shadow-primary/10 ${
+                className={`group flex min-h-[280px] flex-col rounded-xl border bg-white p-6 shadow-lg shadow-primary/5 transition hover:-translate-y-1 hover:shadow-xl hover:shadow-primary/10 ${
                   featured
-                    ? "border-secondary/30 md:col-span-2 xl:col-span-1"
-                    : "border-white/70"
+                    ? "border-gold-accent/30 md:col-span-2 xl:col-span-1"
+                    : "border-border-color"
                 }`}
               >
                 <div className="flex items-start justify-between gap-4">
-                  <span className="flex size-12 items-center justify-center rounded-2xl bg-secondary-100 text-secondary">
+                  <span className="flex size-12 items-center justify-center rounded-xl bg-secondary-100 text-secondary">
                     <Icon aria-hidden="true" className="size-6" />
                   </span>
-                  <span className="flex size-9 items-center justify-center rounded-full bg-surface-soft text-deep-blue transition group-hover:bg-secondary group-hover:text-white">
+                  <span className="flex size-9 items-center justify-center rounded-full bg-surface-soft text-deep-blue transition group-hover:bg-gold-accent group-hover:text-white">
                     <ArrowRight aria-hidden="true" className="size-4" />
                   </span>
                 </div>
                 <h2 className="mt-8 text-2xl font-black">{service.title}</h2>
-                <p className="mt-3 text-sm leading-6 text-slate-600">
+                <p className="mt-3 text-sm leading-6 text-cool-gray">
                   {service.description}
                 </p>
                 {service.details ? (
@@ -155,7 +155,7 @@ export default function ServicesPage() {
                     {service.details.map((detail) => (
                       <span
                         key={detail}
-                        className="rounded-full bg-surface-soft px-3 py-1.5 text-xs font-bold text-slate-600"
+                        className="rounded-full bg-surface-soft px-3 py-1.5 text-xs font-bold text-cool-gray"
                       >
                         {detail}
                       </span>

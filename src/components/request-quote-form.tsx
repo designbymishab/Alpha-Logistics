@@ -75,12 +75,12 @@ export function RequestQuoteForm() {
 
   if (submittedName) {
     return (
-      <div className="rounded-sm border border-secondary/30 bg-secondary/10 p-6">
+      <div className="rounded-lg border border-secondary/30 bg-secondary/10 p-6">
         <CheckCircle2 aria-hidden="true" className="size-10 text-secondary" />
-        <h2 className="mt-5 text-2xl font-black text-slate-950">
+        <h2 className="mt-5 text-2xl font-black text-foreground">
           Quote request received.
         </h2>
-        <p className="mt-3 text-sm leading-6 text-slate-650">
+        <p className="mt-3 text-sm leading-6 text-cool-gray">
           Thank you, {submittedName}. A dedicated customer representative will
           review your shipment details and follow up with the next steps.
         </p>
@@ -91,19 +91,19 @@ export function RequestQuoteForm() {
   return (
     <form
       onSubmit={handleSubmit(onSubmit)}
-      className="rounded-[32px] border border-black/10 bg-white p-5 shadow-xl shadow-black/5 sm:p-6 lg:p-8"
+      className="rounded-xl border border-border-color bg-white p-5 shadow-lg shadow-deep-blue/5 sm:p-6 lg:p-8"
       noValidate
     >
       <div className="flex flex-wrap gap-2">
         {steps.map((step, index) => (
           <span
             key={step}
-            className={`mono-accent rounded-sm px-3 py-1.5 text-xs font-bold ${
+            className={`mono-accent rounded-md px-3 py-1.5 text-xs font-bold ${
               index === currentStep
                 ? "bg-deep-blue text-white"
                 : index < currentStep
                   ? "bg-secondary-100 text-accent"
-                  : "bg-surface-soft text-slate-500"
+                  : "bg-surface-soft text-cool-gray"
             }`}
           >
             {index + 1}. {step}
@@ -195,21 +195,21 @@ export function RequestQuoteForm() {
               </select>
             </FieldGroup>
 
-            <div className="rounded-[22px] border border-black/10 bg-surface-soft p-5">
+            <div className="rounded-lg border border-border-color bg-surface-soft p-5">
               <p className="mono-accent text-sm font-bold uppercase tracking-[0.18em] text-secondary">
                 Selected contact
               </p>
-              <div className="mt-4 grid gap-2 text-sm text-slate-650">
+              <div className="mt-4 grid gap-2 text-sm text-cool-gray">
                 <p>
-                  <span className="font-bold text-slate-950">Name:</span>{" "}
+                  <span className="font-bold text-foreground">Name:</span>{" "}
                   {formValues.fullName || "Pending"}
                 </p>
                 <p>
-                  <span className="font-bold text-slate-950">Company:</span>{" "}
+                  <span className="font-bold text-foreground">Company:</span>{" "}
                   {formValues.company || "Pending"}
                 </p>
                 <p>
-                  <span className="font-bold text-slate-950">Email:</span>{" "}
+                  <span className="font-bold text-foreground">Email:</span>{" "}
                   <span className="mono-accent">
                     {formValues.email || "Pending"}
                   </span>
@@ -240,17 +240,17 @@ export function RequestQuoteForm() {
               />
             </FieldGroup>
 
-            <div className="rounded-[22px] border border-black/10 bg-surface-soft p-5">
+            <div className="rounded-lg border border-border-color bg-surface-soft p-5">
               <p className="mono-accent text-sm font-bold uppercase tracking-[0.18em] text-secondary">
                 Request summary
               </p>
-              <div className="mt-4 grid gap-2 text-sm text-slate-650">
+              <div className="mt-4 grid gap-2 text-sm text-cool-gray">
                 <p>
-                  <span className="font-bold text-slate-950">Service:</span>{" "}
+                  <span className="font-bold text-foreground">Service:</span>{" "}
                   {formValues.serviceType || "Pending"}
                 </p>
                 <p>
-                  <span className="font-bold text-slate-950">Company:</span>{" "}
+                  <span className="font-bold text-foreground">Company:</span>{" "}
                   {formValues.company || "Pending"}
                 </p>
               </div>
@@ -259,12 +259,12 @@ export function RequestQuoteForm() {
         ) : null}
       </div>
 
-      <div className="mt-8 flex flex-col-reverse gap-3 border-t border-slate-200 pt-6 sm:flex-row sm:items-center sm:justify-between">
+      <div className="mt-8 flex flex-col-reverse gap-3 border-t border-border-color pt-6 sm:flex-row sm:items-center sm:justify-between">
         <button
           type="button"
           onClick={() => setCurrentStep((step) => Math.max(step - 1, 0))}
           disabled={currentStep === 0}
-          className="inline-flex h-12 items-center justify-center gap-2 rounded-[12px] border border-black/20 bg-white px-5 text-sm font-black text-deep-blue transition hover:border-accent disabled:cursor-not-allowed disabled:opacity-40 sm:w-auto"
+          className="inline-flex h-12 items-center justify-center gap-2 rounded-lg border border-border-color bg-white px-5 text-sm font-black text-deep-blue transition hover:border-secondary disabled:cursor-not-allowed disabled:opacity-40 sm:w-auto"
         >
           <ArrowLeft aria-hidden="true" className="size-4" />
           Back
@@ -274,7 +274,7 @@ export function RequestQuoteForm() {
           <button
             type="button"
             onClick={goNext}
-            className="orange-cta inline-flex h-12 items-center justify-center gap-2 rounded-[12px] px-6 text-sm font-black transition focus:outline-none focus:ring-2 focus:ring-accent/30 sm:w-auto"
+            className="cta-primary inline-flex h-12 items-center justify-center gap-2 rounded-lg px-6 text-sm font-black transition focus:outline-none focus:ring-2 focus:ring-primary/30 sm:w-auto"
           >
             Continue
             <ArrowRight aria-hidden="true" className="size-4" />
@@ -283,7 +283,7 @@ export function RequestQuoteForm() {
           <button
             type="submit"
             disabled={isSubmitting}
-            className="orange-cta inline-flex h-12 items-center justify-center gap-2 rounded-[12px] px-6 text-sm font-black transition focus:outline-none focus:ring-2 focus:ring-accent/30 disabled:cursor-wait disabled:opacity-70 sm:w-auto"
+            className="cta-primary inline-flex h-12 items-center justify-center gap-2 rounded-lg px-6 text-sm font-black transition focus:outline-none focus:ring-2 focus:ring-primary/30 disabled:cursor-wait disabled:opacity-70 sm:w-auto"
           >
             Submit Request
             <Send aria-hidden="true" className="size-4" />
@@ -309,7 +309,7 @@ function FieldGroup({
     <div>
       <label
         htmlFor={id}
-        className="text-sm font-bold text-slate-950"
+        className="text-sm font-bold text-foreground"
       >
         {label}
       </label>
