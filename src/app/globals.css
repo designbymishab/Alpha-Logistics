@@ -237,6 +237,29 @@ html {
   }
 }
 
+@keyframes container-3d-float {
+  0%, 100% {
+    transform: perspective(1200px) translateY(0) rotateX(2deg) rotateY(-3deg) rotateZ(0deg);
+  }
+  25% {
+    transform: perspective(1200px) translateY(-8px) rotateX(-1deg) rotateY(-1deg) rotateZ(0.5deg);
+  }
+  50% {
+    transform: perspective(1200px) translateY(-14px) rotateX(-2deg) rotateY(2deg) rotateZ(0deg);
+  }
+  75% {
+    transform: perspective(1200px) translateY(-6px) rotateX(1deg) rotateY(1deg) rotateZ(-0.5deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .animate-container-3d {
+    animation: container-3d-float 14s ease-in-out infinite;
+    transform-style: preserve-3d;
+    filter: drop-shadow(0 30px 40px rgba(0, 0, 0, 0.35));
+  }
+}
+
 .card {
   background: #ffffff;
   border: 1px solid var(--border-color);

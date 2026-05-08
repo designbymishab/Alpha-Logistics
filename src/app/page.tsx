@@ -152,15 +152,19 @@ export default function Home() {
             <div className="absolute right-16 top-8 hidden h-px w-48 rotate-[12deg] bg-secondary sm:block" />
             <span className="absolute left-2 top-20 hidden size-4 rounded-full border-2 border-secondary sm:block" />
             <span className="absolute right-5 top-14 hidden size-4 rounded-full border-2 border-secondary sm:block" />
-            <Image
-              src={containerImage}
-              alt="Alpha Logistics black shipping container"
-              fill
-              priority
-              placeholder="blur"
-              sizes="(max-width: 1024px) 100vw, 1040px"
-              className="z-30 translate-y-8 object-contain object-center sm:translate-y-10 sm:scale-110 lg:translate-y-14 lg:scale-125"
-            />
+            <div className="absolute inset-0 z-30 translate-y-8 sm:translate-y-10 sm:scale-110 lg:translate-y-14 lg:scale-125">
+              <div className="relative h-full w-full animate-container-3d">
+                <Image
+                  src={containerImage}
+                  alt="Alpha Logistics black shipping container"
+                  fill
+                  priority
+                  placeholder="blur"
+                  sizes="(max-width: 1024px) 100vw, 1040px"
+                  className="object-contain object-center"
+                />
+              </div>
+            </div>
             <div className="pointer-events-none absolute inset-x-10 bottom-0 z-10 h-16 rounded-full bg-deep-blue/10 blur-3xl" />
           </div>
         </div>
