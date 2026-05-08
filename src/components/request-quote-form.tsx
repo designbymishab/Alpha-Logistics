@@ -111,7 +111,7 @@ export function RequestQuoteForm() {
         ))}
       </div>
 
-      <div className="mt-8 min-h-[270px] sm:min-h-[330px]">
+      <div className="mt-6 min-h-[270px] sm:mt-8 sm:min-h-[330px]">
         {currentStep === 0 ? (
           <div className="grid gap-5">
             <FieldGroup

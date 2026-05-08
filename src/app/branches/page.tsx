@@ -78,17 +78,17 @@ export default function BranchesPage() {
         <div className="site-shell grid gap-8 lg:grid-cols-[0.95fr_1.05fr] lg:items-center">
           <div>
             <p className="kicker">Global Branches</p>
-            <h1 className="page-title mt-4 max-w-3xl">
+            <h1 className="page-title mt-3 max-w-3xl sm:mt-4">
               Regional offices connected to resilient trade lanes.
             </h1>
-            <p className="mt-5 max-w-2xl text-sm leading-7 text-cool-gray">
+            <p className="mt-4 max-w-2xl text-[0.85rem] leading-6 text-cool-gray sm:mt-5 sm:text-sm sm:leading-7">
               Alpha Logistics gives clients a practical point of access across
               Qatar, the GCC, South Asia, Southeast Asia, and East Africa, with
               local contacts supporting international movement.
             </p>
           </div>
 
-          <div className="relative min-h-[360px] overflow-hidden rounded-2xl bg-white p-5 shadow-2xl shadow-deep-blue/10 sm:min-h-[460px]">
+          <div className="relative min-h-[300px] overflow-hidden rounded-2xl bg-white p-4 shadow-2xl shadow-deep-blue/10 sm:min-h-[460px] sm:p-5">
             <div className="absolute inset-0 opacity-70">
               <div className="h-full bg-[radial-gradient(circle_at_18%_50%,#0D47A1_0_5px,transparent_6px),radial-gradient(circle_at_45%_42%,#1565C0_0_5px,transparent_6px),radial-gradient(circle_at_58%_62%,#00BCD4_0_5px,transparent_6px),radial-gradient(circle_at_72%_38%,#D4A017_0_5px,transparent_6px),radial-gradient(circle_at_82%_66%,#0D47A1_0_5px,transparent_6px),linear-gradient(120deg,transparent_18%,rgba(13,71,161,.12)_18%_19%,transparent_19%_46%,rgba(0,188,212,.16)_46%_47%,transparent_47%)]" />
             </div>
@@ -113,14 +113,14 @@ export default function BranchesPage() {
 
       <section className="section-band bg-white">
         <div className="site-shell">
-          <div className="mb-8 flex flex-col justify-between gap-4 md:flex-row md:items-end">
+          <div className="mb-6 flex flex-col justify-between gap-4 sm:mb-8 md:flex-row md:items-end">
             <div>
               <p className="kicker">Locations</p>
-              <h2 className="mt-3 max-w-2xl text-4xl font-black leading-tight sm:text-5xl">
+              <h2 className="mt-2 max-w-2xl text-3xl font-black leading-tight sm:mt-3 sm:text-5xl">
                 Clear contacts for faster shipment decisions.
               </h2>
             </div>
-            <p className="max-w-md text-sm leading-7 text-cool-gray">
+            <p className="max-w-md text-[0.85rem] leading-6 text-cool-gray sm:text-sm sm:leading-7">
               Use the closest branch for origin details, documentation
               readiness, and shipment coordination. Phone links are mobile-ready
               where numbers are available.

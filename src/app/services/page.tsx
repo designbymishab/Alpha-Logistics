@@ -78,10 +78,10 @@ export default function ServicesPage() {
         <div className="site-shell grid gap-8 lg:grid-cols-[0.92fr_1.08fr] lg:items-center">
           <div>
             <p className="kicker">Shipping & Logistics Services</p>
-            <h1 className="page-title mt-4 max-w-3xl text-balance">
+            <h1 className="page-title mt-3 max-w-3xl text-balance sm:mt-4">
               Freight services built for pressure, precision, and predictable delivery.
             </h1>
-            <p className="mt-5 max-w-2xl text-sm leading-7 text-cool-gray">
+            <p className="mt-4 max-w-2xl text-[0.85rem] leading-6 text-cool-gray sm:mt-5 sm:text-sm sm:leading-7">
               Alpha Logistics coordinates air, ocean, land, customs, and
               specialized cargo through one operating rhythm, helping clients
               compare cost, speed, risk, and compliance before committing to a
@@ -94,7 +94,7 @@ export default function ServicesPage() {
               Request a Quote
             </Link>
           </div>
-          <div className="relative min-h-[320px] overflow-hidden rounded-2xl bg-deep-blue shadow-2xl shadow-deep-blue/20 sm:min-h-[450px]">
+          <div className="relative min-h-[260px] overflow-hidden rounded-2xl bg-deep-blue shadow-2xl shadow-deep-blue/20 sm:min-h-[450px]">
             <Image
               src={oceanImage}
               alt="Alpha Logistics freight services across ocean and air"
@@ -111,14 +111,14 @@ export default function ServicesPage() {
 
       <section className="section-band bg-white">
         <div className="site-shell">
-          <div className="mb-8 flex flex-col justify-between gap-4 md:flex-row md:items-end">
+          <div className="mb-6 flex flex-col justify-between gap-4 sm:mb-8 md:flex-row md:items-end">
             <div>
               <p className="kicker">Service Overview</p>
-              <h2 className="mt-3 max-w-2xl text-4xl font-black leading-tight sm:text-5xl">
+              <h2 className="mt-2 max-w-2xl text-3xl font-black leading-tight sm:mt-3 sm:text-5xl">
                 Choose the right mode for the commercial moment.
               </h2>
             </div>
-            <p className="max-w-md text-sm leading-7 text-cool-gray">
+            <p className="max-w-md text-[0.85rem] leading-6 text-cool-gray sm:text-sm sm:leading-7">
               Air freight protects urgency, ocean freight protects unit cost,
               road freight protects regional control, and brokerage protects
               the clearance timeline.

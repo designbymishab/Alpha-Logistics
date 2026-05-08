@@ -9,7 +9,7 @@ const footerLinks = [
 export function Footer() {
   return (
     <footer id="contact" className="border-t border-white/10 bg-deep-blue text-white">
-      <div className="site-shell grid gap-10 py-12 md:grid-cols-[1.3fr_1fr_1fr]">
+      <div className="site-shell grid gap-8 py-10 sm:gap-10 sm:py-12 md:grid-cols-[1.3fr_1fr_1fr]">
         <div>
           <div className="flex items-center gap-3">
             <span className="grid size-11 grid-cols-2 overflow-hidden rounded-br-[18px] rounded-tl-[18px]">

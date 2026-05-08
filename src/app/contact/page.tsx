@@ -45,17 +45,17 @@ export default function ContactPage() {
         <div className="site-shell grid gap-8 lg:grid-cols-[0.95fr_1.05fr] lg:items-center">
           <div>
             <p className="kicker">Contact Us</p>
-            <h1 className="page-title mt-4 max-w-3xl">
+            <h1 className="page-title mt-3 max-w-3xl sm:mt-4">
               Request a quote with a team that thinks beyond the rate.
             </h1>
-            <p className="mt-5 max-w-2xl text-sm leading-7 text-cool-gray">
+            <p className="mt-4 max-w-2xl text-[0.85rem] leading-6 text-cool-gray sm:mt-5 sm:text-sm sm:leading-7">
               Share your shipment requirements and we will align the right
               mode, timeline, clearance path, and support model before your
               cargo enters the supply chain.
             </p>
           </div>
 
-          <div className="relative min-h-[320px] overflow-hidden rounded-2xl bg-deep-blue shadow-2xl shadow-deep-blue/20 sm:min-h-[430px]">
+          <div className="relative min-h-[260px] overflow-hidden rounded-2xl bg-deep-blue shadow-2xl shadow-deep-blue/20 sm:min-h-[430px]">
             <Image
               src={containerImage}
               alt="Alpha Logistics black shipping container contact visual"
@@ -89,10 +89,10 @@ export default function ContactPage() {
             <p className="mt-6 text-sm font-black uppercase tracking-[0.22em] text-gold-accent">
               Dedicated Customer Representative
             </p>
-            <h2 className="mt-3 text-3xl font-black leading-tight sm:text-4xl">
+            <h2 className="mt-2 text-2xl font-black leading-tight sm:mt-3 sm:text-4xl">
               One main point of contact for every client.
             </h2>
-            <p className="mt-5 text-sm leading-7 text-white/68">
+            <p className="mt-4 text-[0.85rem] leading-6 text-white/68 sm:mt-5 sm:text-sm sm:leading-7">
               Every Alpha Apex Logistics client is supported by a dedicated
               representative who understands their cargo profile, preferred
               lanes, documentation requirements, delivery expectations, and
