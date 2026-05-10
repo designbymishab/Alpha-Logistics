@@ -22,6 +22,7 @@ import poweringlogistics from "../../public/images/poweringlogistics.webp";
 import globalNetworkBg from "../../public/images/map.webp";
 import nationwideTruck from "../../public/images/nationwide-warehouse.webp";
 import nationwideWarehouse from "../../public/images/services.webp";
+import { ScrollReveal } from "@/components/scroll-reveal";
 
 export const metadata: Metadata = {
   title: "Home",
@@ -106,7 +107,8 @@ export default function Home() {
   return (
     <div className="bg-background text-deep-blue">
       <section className="relative overflow-visible bg-background">
-        <div className="site-shell pb-0 pt-8 sm:pt-16">
+        <ScrollReveal>
+          <div className="site-shell pb-0 pt-8 sm:pt-16">
           <div className="mx-auto max-w-5xl text-center">
             <h1 className="text-4xl font-black leading-[0.98] tracking-tight text-foreground sm:text-6xl lg:text-8xl">
               Delivering Your Cargo
@@ -157,11 +159,13 @@ export default function Home() {
             </div>
             <div className="pointer-events-none absolute inset-x-10 bottom-0 z-10 h-16 rounded-full bg-deep-blue/10 blur-3xl" />
           </div>
-        </div>
+          </div>
+        </ScrollReveal>
       </section>
 
       <section className="relative z-10 bg-white pb-16 pt-4 sm:-mt-14 sm:pb-20 lg:-mt-24">
-        <div className="site-shell">
+        <ScrollReveal>
+          <div className="site-shell">
           <div className="relative overflow-hidden rounded-2xl bg-deep-blue text-white shadow-2xl shadow-deep-blue/25 sm:rounded-3xl">
             <div
               aria-hidden="true"
@@ -292,11 +296,13 @@ export default function Home() {
               </div>
             </div>
           </div>
-        </div>
+          </div>
+        </ScrollReveal>
       </section>
 
       <section className="bg-background py-12 sm:py-20">
-        <div className="site-shell">
+        <ScrollReveal>
+          <div className="site-shell">
           <div className="mx-auto max-w-3xl text-center">
             <h2 className="text-3xl font-black leading-tight text-foreground sm:text-5xl">
               How We Move Your Cargo
@@ -341,11 +347,13 @@ export default function Home() {
               );
             })}
           </div>
-        </div>
+          </div>
+        </ScrollReveal>
       </section>
 
       <section className="bg-white pb-12 sm:pb-24">
-        <div className="site-shell grid gap-8 lg:grid-cols-[0.9fr_1.1fr] lg:items-center lg:gap-10">
+        <ScrollReveal>
+          <div className="site-shell grid gap-8 lg:grid-cols-[0.9fr_1.1fr] lg:items-center lg:gap-10">
           <div>
             <p className="kicker">Powering Logistics</p>
             <h2 className="mt-2 max-w-xl text-2xl font-black leading-tight text-foreground sm:mt-3 sm:text-5xl">
@@ -399,7 +407,8 @@ export default function Home() {
               </div>
             </div>
           </div>
-        </div>
+          </div>
+        </ScrollReveal>
       </section>
 
       <section className="global-network-section relative bg-[#0A2342] overflow-hidden py-16 sm:py-24">
@@ -420,7 +429,8 @@ export default function Home() {
           <div className="absolute right-0 top-1/4 size-72 rounded-full bg-cyan-accent/[0.06] blur-[80px]" />
         </div>
 
-        <div className="site-shell relative z-10">
+        <ScrollReveal>
+          <div className="site-shell relative z-10">
           {/* Header */}
           <div className="mx-auto max-w-3xl text-center">
             <span className="inline-flex items-center gap-2 rounded-full border border-secondary/20 bg-secondary/[0.08] px-4 py-2 text-xs font-black uppercase tracking-[0.18em] text-secondary backdrop-blur-sm">
@@ -512,11 +522,13 @@ export default function Home() {
               </div>
             ))}
           </div>
-        </div>
+          </div>
+        </ScrollReveal>
       </section>
 
       <section className="bg-white py-12 sm:py-24">
-        <div className="site-shell">
+        <ScrollReveal>
+          <div className="site-shell">
           <div className="grid overflow-hidden rounded-2xl bg-deep-blue text-white shadow-2xl shadow-deep-blue/18 lg:grid-cols-[1fr_360px]">
             <div className="relative min-h-[260px] p-5 sm:min-h-[320px] sm:p-10">
               <Image
@@ -586,7 +598,8 @@ export default function Home() {
               );
             })}
           </div>
-        </div>
+          </div>
+        </ScrollReveal>
       </section>
     </div>
   );

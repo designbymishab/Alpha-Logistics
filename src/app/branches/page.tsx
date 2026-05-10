@@ -7,6 +7,7 @@ import {
   Phone,
   UserRound,
 } from "lucide-react";
+import { ScrollReveal } from "@/components/scroll-reveal";
 
 type Branch = {
   country: string;
@@ -75,7 +76,8 @@ export default function BranchesPage() {
   return (
     <div className="text-deep-blue">
       <section className="section-band-soft overflow-hidden">
-        <div className="site-shell grid gap-8 lg:grid-cols-[0.95fr_1.05fr] lg:items-center">
+        <ScrollReveal>
+          <div className="site-shell grid gap-8 lg:grid-cols-[0.95fr_1.05fr] lg:items-center">
           <div>
             <p className="kicker">Our Locations</p>
             <h1 className="page-title mt-3 max-w-3xl sm:mt-4">
@@ -111,11 +113,13 @@ export default function BranchesPage() {
               </div>
             </div>
           </div>
-        </div>
+          </div>
+        </ScrollReveal>
       </section>
 
       <section className="section-band bg-white">
-        <div className="site-shell">
+        <ScrollReveal>
+          <div className="site-shell">
           <div className="mb-6 flex flex-col justify-between gap-4 sm:mb-8 md:flex-row md:items-end">
             <div>
               <p className="kicker">Locations</p>
@@ -203,7 +207,8 @@ export default function BranchesPage() {
             </article>
           ))}
         </div>
-        </div>
+          </div>
+        </ScrollReveal>
       </section>
     </div>
   );

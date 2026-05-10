@@ -3,6 +3,7 @@ import Image from "next/image";
 import { Headset, Route, ShieldCheck, Sparkles } from "lucide-react";
 import { RequestQuoteForm } from "@/components/request-quote-form";
 import containerImage from "../../../public/images/hero-black-container.webp";
+import { ScrollReveal } from "@/components/scroll-reveal";
 
 const representativeBenefits = [
   {
@@ -42,7 +43,8 @@ export default function ContactPage() {
   return (
     <div className="text-deep-blue">
       <section className="section-band-soft overflow-hidden">
-        <div className="site-shell grid gap-8 lg:grid-cols-[0.95fr_1.05fr] lg:items-center">
+        <ScrollReveal>
+          <div className="site-shell grid gap-8 lg:grid-cols-[0.95fr_1.05fr] lg:items-center">
           <div>
             <p className="kicker">Contact Us</p>
             <h1 className="page-title mt-3 max-w-3xl sm:mt-4">
@@ -75,11 +77,13 @@ export default function ContactPage() {
               </p>
             </div>
           </div>
-        </div>
+          </div>
+        </ScrollReveal>
       </section>
 
       <section className="section-band bg-white">
-        <div className="site-shell grid gap-6 lg:grid-cols-[1.08fr_0.92fr] lg:items-start">
+        <ScrollReveal>
+          <div className="site-shell grid gap-6 lg:grid-cols-[1.08fr_0.92fr] lg:items-start">
           <RequestQuoteForm />
 
           <aside className="rounded-xl bg-deep-blue p-6 text-white shadow-2xl shadow-deep-blue/20 sm:p-8 lg:sticky lg:top-28">
@@ -122,7 +126,8 @@ export default function ContactPage() {
               })}
             </div>
           </aside>
-        </div>
+          </div>
+        </ScrollReveal>
       </section>
     </div>
   );

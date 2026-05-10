@@ -11,6 +11,7 @@ import {
   type LucideIcon,
 } from "lucide-react";
 import oceanImage from "../../../public/images/global-map-bg.webp";
+import { ScrollReveal } from "@/components/scroll-reveal";
 
 type Service = {
   title: string;
@@ -75,11 +76,12 @@ export default function ServicesPage() {
   return (
     <div className="text-deep-blue">
       <section className="section-band-soft overflow-hidden">
-        <div className="site-shell grid gap-8 lg:grid-cols-[0.92fr_1.08fr] lg:items-center">
+        <ScrollReveal>
+          <div className="site-shell grid gap-8 lg:grid-cols-[0.92fr_1.08fr] lg:items-center">
           <div>
             <p className="kicker">Shipping & Logistics Services</p>
             <h1 className="page-title mt-3 max-w-3xl text-balance sm:mt-4">
-              Freight solutions that hold up when the pressure is on.
+              Reliable freight solutions.
             </h1>
             <p className="mt-4 max-w-2xl text-[0.85rem] leading-6 text-cool-gray sm:mt-5 sm:text-sm sm:leading-7">
               We bring air, ocean, land, customs, and specialized cargo under
@@ -105,11 +107,13 @@ export default function ServicesPage() {
             />
             <div className="absolute inset-0 bg-gradient-to-t from-deep-blue/80 to-transparent" />
           </div>
-        </div>
+          </div>
+        </ScrollReveal>
       </section>
 
       <section className="section-band bg-white">
-        <div className="site-shell">
+        <ScrollReveal>
+          <div className="site-shell">
           <div className="mb-6 flex flex-col justify-between gap-4 sm:mb-8 md:flex-row md:items-end">
             <div>
               <p className="kicker">Service Overview</p>
@@ -175,7 +179,8 @@ export default function ServicesPage() {
             );
           })}
         </div>
-        </div>
+          </div>
+        </ScrollReveal>
       </section>
     </div>
   );

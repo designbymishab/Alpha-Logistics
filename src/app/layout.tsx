@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Footer } from "@/components/footer";
 import { Navigation } from "@/components/navigation";
+import { SmoothScroll } from "@/components/smooth-scroll";
 import "@fontsource/inter/400.css";
 import "@fontsource/inter/500.css";
 import "@fontsource/inter/600.css";
@@ -60,7 +61,9 @@ export default function RootLayout({
     <html lang="en" className="h-full antialiased">
       <body className="flex min-h-full flex-col">
         <Navigation />
-        <main className="flex-1">{children}</main>
+        <SmoothScroll>
+          <main className="flex-1">{children}</main>
+        </SmoothScroll>
         <Footer />
       </body>
     </html>
