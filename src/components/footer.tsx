@@ -21,13 +21,13 @@ export function Footer() {
             <div>
               <p className="mono-accent font-black">Alpha Apex Logistics</p>
               <p className="text-sm font-medium text-white/60">
-                Route-aware freight forwarding from Qatar.
+                Freight forwarding, rooted in Qatar.
               </p>
             </div>
           </div>
           <p className="mt-5 max-w-md text-sm leading-6 text-white/62">
-            Built for clients who need reliable movement, better documentation,
-            and one accountable team across air, ocean, road, and customs.
+            We move cargo by air, ocean, and road — with customs support and a
+            single accountable team from start to finish.
           </p>
         </div>
 

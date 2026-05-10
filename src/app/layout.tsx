@@ -15,11 +15,11 @@ import "./globals.css";
 
 export const metadata: Metadata = {
   title: {
-    default: "Alpha Logistics | Alpha Apex Logistics",
-    template: "%s | Alpha Logistics",
+    default: "Alpha Apex Logistics | Freight Forwarding from Qatar to the World",
+    template: "%s | Alpha Apex Logistics",
   },
   description:
-    "Alpha Logistics delivers data-aware freight forwarding, customs brokerage, and resilient supply chain coordination from Qatar across the GCC and beyond.",
+    "Alpha Apex Logistics is a Qatar-based freight forwarder offering air, ocean, and road shipping alongside customs brokerage — serving the GCC, South Asia, and global trade lanes.",
   keywords: [
     "Alpha Logistics",
     "Alpha Apex Logistics",
@@ -34,9 +34,9 @@ export const metadata: Metadata = {
     follow: true,
   },
   openGraph: {
-    title: "Alpha Logistics | Alpha Apex Logistics",
+    title: "Alpha Apex Logistics | Freight Forwarding from Qatar to the World",
     description:
-      "International freight forwarding and logistics coordination across the GCC and beyond.",
+      "Qatar-based freight forwarding, customs brokerage, and supply chain support for businesses shipping across the GCC and beyond.",
     siteName: "Alpha Apex Logistics",
     type: "website",
     locale: "en_US",

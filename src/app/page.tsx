@@ -27,13 +27,13 @@ import nationwideWarehouse from "../../public/images/nationwide-warehouse.png";
 export const metadata: Metadata = {
   title: "Home",
   description:
-    "Alpha Logistics by Alpha Apex Logistics delivers resilient freight forwarding, customs coordination, and data-aware supply chain solutions across Qatar, the GCC, and global trade lanes.",
+    "Alpha Apex Logistics is an international freight forwarder headquartered in Qatar — moving air, ocean, and road cargo across the GCC and major global trade corridors.",
   keywords: [
-    "Alpha Logistics",
-    "global supply chain solution",
-    "international freight forwarder",
-    "GCC logistics",
-    "global carrier partnerships",
+    "Alpha Apex Logistics",
+    "freight forwarder Qatar",
+    "international freight forwarding",
+    "GCC logistics company",
+    "air ocean road freight",
   ],
 };
 
@@ -68,9 +68,9 @@ const services = [
 ];
 
 const businessPoints = [
-  "Multi-carrier routing for volatile ocean and air markets",
-  "Customs-ready documentation before cargo reaches the border",
-  "Single point of contact for exceptions, status, and decisions",
+  "Multi-carrier routing that adapts when ocean and air markets shift",
+  "Customs paperwork prepared before your cargo reaches the border",
+  "One dedicated contact for updates, exceptions, and quick decisions",
 ];
 
 const locations = [
@@ -84,21 +84,21 @@ const locations = [
 
 const whyChooseUs = [
   {
-    title: "Strong Global Partnerships",
+    title: "Trusted Carrier Network",
     description:
-      "Carrier and agent relationships help Alpha Logistics protect capacity across high-demand air, ocean, and GCC road lanes.",
+      "We've built long-standing relationships with carriers and agents worldwide, so your cargo gets priority even when capacity is tight.",
     icon: Globe2,
   },
   {
-    title: "Expert Team",
+    title: "People Who Know Freight",
     description:
-      "Freight specialists translate routing, documentation, duty, and compliance decisions into a clear shipment plan.",
+      "Our team handles the routing, paperwork, duties, and compliance details — so you get a clear plan instead of a pile of decisions.",
     icon: UsersRound,
   },
   {
-    title: "Compliance First",
+    title: "Built Around Compliance",
     description:
-      "Structured brokerage support reduces avoidable border delays for regulated cargo, project freight, and regional distribution.",
+      "We prepare documentation and brokerage support upfront, which means fewer surprises at the border and faster clearance times.",
     icon: ShieldCheck,
   },
 ];
@@ -112,16 +112,16 @@ export default function Home() {
             <h1 className="text-4xl font-black leading-[0.98] tracking-tight text-foreground sm:text-6xl lg:text-8xl">
               Delivering Your Cargo
               <span className="mt-2 flex items-center justify-center gap-2 sm:gap-3 text-secondary">
-                <span className="flex size-8 items-center justify-center rounded-full bg-secondary-100 sm:size-12">
+                {/* <span className="flex size-8 items-center justify-center rounded-full bg-secondary-100 sm:size-12">
                   <Globe2 aria-hidden="true" className="size-4 sm:size-6" />
-                </span>
+                </span> */}
                 Worldwide
               </span>
             </h1>
             <p className="mx-auto mt-4 sm:mt-5 max-w-2xl px-2 text-[0.85rem] leading-6 text-cool-gray sm:px-0 sm:text-base sm:leading-7">
-              A Qatar-based international freight forwarder helping ambitious
-              businesses move time-sensitive, regulated, and high-value cargo
-              across the GCC and beyond.
+              Qatar-based freight forwarding for businesses that ship
+              time-sensitive, regulated, and high-value cargo across
+              the GCC and international markets.
             </p>
 
             <div className="mx-auto mt-6 flex max-w-xl flex-col gap-2 rounded-xl border border-border-color bg-white p-2 shadow-lg shadow-deep-blue/5 sm:mt-7 sm:grid sm:grid-cols-[1fr_1fr_48px]">
@@ -253,14 +253,15 @@ export default function Home() {
                   </span>
                 </div>
                 <h2 className="mt-5 max-w-2xl text-4xl font-black leading-[1.05] text-white sm:mt-6 sm:text-5xl lg:text-6xl">
-                  <span className="text-secondary drop-shadow-sm">#1</span> Nationwide{" "}
-                  Delivery Logistics Solution
+                  Your{" "}
+                  <span className="text-secondary drop-shadow-sm">Complete</span> Freight{" "}
+                  Forwarding Partner
                 </h2>
                 <p className="mt-4 max-w-xl text-[0.85rem] leading-6 text-white/60 sm:mt-5 sm:text-[0.95rem] sm:leading-relaxed">
-                  Global trade is growing, but capacity, tariffs, and route
-                  disruption make execution harder. Alpha Logistics gives
-                  clients a calmer operating model: practical routing, clear
-                  documentation, and accountable support from quote to delivery.
+                  Shipping is getting more complex — tighter capacity, shifting
+                  tariffs, unpredictable routes. We cut through that noise with
+                  practical routing, clear documentation, and a team that stays
+                  accountable from the first quote to final delivery.
                 </p>
 
                 <div className="mt-8 grid grid-cols-3 gap-3 sm:mt-10 sm:gap-4">
@@ -308,11 +309,11 @@ export default function Home() {
         <div className="site-shell">
           <div className="mx-auto max-w-3xl text-center">
             <h2 className="text-3xl font-black leading-tight text-foreground sm:text-5xl">
-              Shipping & Logistics Services
+              How We Move Your Cargo
             </h2>
             <p className="mx-auto mt-3 max-w-2xl px-2 text-[0.85rem] leading-6 text-cool-gray sm:mt-4 sm:px-0 sm:text-sm sm:leading-7">
-              Choose the mode that protects your margin, timeline, and cargo
-              condition, then let one team coordinate the handoffs.
+              Pick the shipping mode that fits your budget, timeline, and cargo
+              requirements. We handle the coordination from pickup to delivery.
             </p>
           </div>
 
@@ -358,13 +359,13 @@ export default function Home() {
           <div>
             <p className="kicker">Powering Logistics</p>
             <h2 className="mt-2 max-w-xl text-3xl font-black leading-tight text-foreground sm:mt-3 sm:text-5xl">
-              Powering logistics across business
+              The engine behind your supply chain
             </h2>
             <p className="mt-4 max-w-xl text-[0.85rem] leading-6 text-cool-gray sm:mt-5 sm:text-sm sm:leading-7">
-              Air cargo reached record volumes in 2025 while maritime trade
-              faced slower growth and route pressure. Our role is to help
-              clients stay flexible, compare options, and avoid late decisions
-              that create cost.
+              Air cargo hit record volumes recently, while ocean shipping faced
+              tighter routes and slower growth. We help you stay ahead of those
+              shifts — comparing options early so last-minute decisions don't
+              eat into your margins.
             </p>
             <div className="mt-7 max-w-xl divide-y divide-border-color border-y border-border-color">
               {businessPoints.map((point) => (
@@ -437,14 +438,15 @@ export default function Home() {
               Global Network
             </span>
             <h2 className="mt-5 text-3xl font-black leading-[1.06] text-white sm:mt-6 sm:text-5xl lg:text-[3.4rem]">
-              Strategically positioned across{" "}
+              Offices where the{" "}
               <span className="bg-gradient-to-r from-gold-accent to-[#f0c040] bg-clip-text text-transparent">
-                key trade lanes
+                trade moves
               </span>
             </h2>
             <p className="mx-auto mt-4 max-w-2xl text-[0.85rem] leading-6 text-white/55 sm:mt-5 sm:text-sm sm:leading-7">
-              Qatar HQ anchors a growing network reaching the GCC, South Asia,
-              Southeast Asia, and East Africa — connecting your cargo to every major corridor.
+              Our Qatar headquarters connects to a growing network across the GCC,
+              South Asia, Southeast Asia, and East Africa — putting your cargo
+              closer to every major shipping corridor.
             </p>
           </div>
 
@@ -468,7 +470,7 @@ export default function Home() {
                     </span>
                   </div>
                   <p className="mt-2 max-w-lg text-sm leading-6 text-white/50">
-                    Central operations hub coordinating air, ocean, and land freight across all GCC and international trade lanes.
+                    Our central hub in Doha — coordinating air, ocean, and land shipments across every GCC and international route.
                   </p>
                 </div>
                 <span className="flex size-12 shrink-0 items-center justify-center rounded-full border border-white/10 bg-white/[0.06] text-gold-accent transition group-hover:border-gold-accent/30 group-hover:bg-gold-accent group-hover:text-white">
@@ -539,11 +541,12 @@ export default function Home() {
               <div className="relative max-w-xl">
                 <p className="kicker">Shipment Tracking</p>
                 <h2 className="mt-3 text-3xl font-black leading-tight sm:mt-4 sm:text-5xl">
-                  Track or calculate your shipments
+                  Stay on top of every shipment
                 </h2>
                 <p className="mt-3 max-w-md text-[0.85rem] leading-6 text-white/68 sm:mt-4 sm:text-sm sm:leading-7">
-                  Send shipment details early so our team can identify the
-                  right service, documentation path, and delivery expectation.
+                  Share your shipment details early and we'll match you with the
+                  right service, prepare the paperwork, and set clear delivery
+                  expectations from day one.
                 </p>
               </div>
             </div>

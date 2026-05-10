@@ -78,11 +78,12 @@ export function RequestQuoteForm() {
       <div className="rounded-lg border border-secondary/30 bg-secondary/10 p-6">
         <CheckCircle2 aria-hidden="true" className="size-10 text-secondary" />
         <h2 className="mt-5 text-2xl font-black text-foreground">
-          Quote request received.
+          We've got your request.
         </h2>
         <p className="mt-3 text-sm leading-6 text-cool-gray">
-          Thank you, {submittedName}. A dedicated customer representative will
-          review your shipment details and follow up with the next steps.
+          Thanks, {submittedName}. One of our team members will review your
+          details and reach out shortly with next steps and a tailored
+          recommendation.
         </p>
       </div>
     );

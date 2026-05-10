@@ -23,31 +23,31 @@ const services: Service[] = [
   {
     title: "Air Freight",
     description:
-      "Priority uplift for urgent, high-value, and replenishment cargo where time lost is more expensive than freight.",
+      "When time costs more than freight, our air cargo team gets it there fast — handling urgent, high-value, and replenishment shipments.",
     icon: Plane,
   },
   {
     title: "Ocean Freight",
     description:
-      "FCL, LCL, and reefer planning for cost-controlled movement across long-haul trade lanes and port handoffs.",
+      "Full container, less-than-container, and temperature-controlled shipping for long-haul routes where keeping costs predictable matters most.",
     icon: Ship,
   },
   {
     title: "Land Freight",
     description:
-      "Cross-border GCC haulage for regional distribution, time-definite trucking, and first-mile or final-mile control.",
+      "Cross-border trucking across the GCC for regional distribution, time-definite delivery, and reliable first-mile or last-mile coverage.",
     icon: Truck,
   },
   {
     title: "Customs Brokerage",
     description:
-      "Documentation, HS-code support, duty calculations, and compliance checks before cargo reaches inspection.",
+      "We handle HS codes, duty calculations, compliance reviews, and documentation prep — so your cargo clears without delays.",
     icon: ClipboardCheck,
   },
   {
     title: "Specialized Services",
     description:
-      "Controlled handling for project cargo, dangerous goods, packing, relocation, and shipments that need extra supervision.",
+      "Careful handling for project cargo, hazardous materials, packing, relocation, and any shipment that needs extra attention and oversight.",
     icon: PackageCheck,
     details: [
       "Project Cargo for Oil & Gas and Construction",
@@ -60,14 +60,14 @@ const services: Service[] = [
 export const metadata: Metadata = {
   title: "Services",
   description:
-    "Explore Alpha Logistics services from Alpha Apex Logistics, including air freight, ocean freight, GCC road freight, customs brokerage, and specialized cargo support.",
+    "Air freight, ocean freight, GCC road freight, customs brokerage, and specialized cargo handling — all managed by one experienced team at Alpha Apex Logistics.",
   keywords: [
-    "Alpha Logistics",
-    "air freight services",
+    "Alpha Apex Logistics services",
+    "air freight Qatar",
     "ocean freight services",
-    "land freight GCC",
-    "customs brokerage",
-    "specialized cargo",
+    "GCC road freight",
+    "customs brokerage Qatar",
+    "specialized cargo handling",
   ],
 };
 
@@ -79,13 +79,12 @@ export default function ServicesPage() {
           <div>
             <p className="kicker">Shipping & Logistics Services</p>
             <h1 className="page-title mt-3 max-w-3xl text-balance sm:mt-4">
-              Freight services built for pressure, precision, and predictable delivery.
+              Freight solutions that hold up when the pressure is on.
             </h1>
             <p className="mt-4 max-w-2xl text-[0.85rem] leading-6 text-cool-gray sm:mt-5 sm:text-sm sm:leading-7">
-              Alpha Logistics coordinates air, ocean, land, customs, and
-              specialized cargo through one operating rhythm, helping clients
-              compare cost, speed, risk, and compliance before committing to a
-              route.
+              We bring air, ocean, land, customs, and specialized cargo under
+              one roof — so you can compare cost, speed, and risk before
+              committing to a route. No surprises down the line.
             </p>
             <Link
               href="/contact"
@@ -115,13 +114,13 @@ export default function ServicesPage() {
             <div>
               <p className="kicker">Service Overview</p>
               <h2 className="mt-2 max-w-2xl text-3xl font-black leading-tight sm:mt-3 sm:text-5xl">
-                Choose the right mode for the commercial moment.
+                The right mode for the moment.
               </h2>
             </div>
             <p className="max-w-md text-[0.85rem] leading-6 text-cool-gray sm:text-sm sm:leading-7">
-              Air freight protects urgency, ocean freight protects unit cost,
-              road freight protects regional control, and brokerage protects
-              the clearance timeline.
+              Air keeps things moving when speed matters. Ocean keeps unit costs
+              down on longer hauls. Road gives you tighter regional control.
+              And brokerage keeps clearance on schedule.
             </p>
           </div>
         <div className="grid gap-5 md:grid-cols-2 xl:grid-cols-3">

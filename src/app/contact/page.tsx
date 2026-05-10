@@ -6,21 +6,21 @@ import containerImage from "../../../public/images/hero-black-container.png";
 
 const representativeBenefits = [
   {
-    title: "Tailored solutions",
+    title: "Tailored to your shipment",
     description:
-      "Routing recommendations shaped around shipment urgency, cargo type, destination risk, and budget.",
+      "We don't offer cookie-cutter quotes. Recommendations are shaped by your cargo type, urgency, destination, and budget.",
     icon: Sparkles,
   },
   {
-    title: "Clear ownership",
+    title: "One person, full ownership",
     description:
-      "A primary contact coordinates quote details, route decisions, status updates, and exception handling.",
+      "Your dedicated contact manages the quote, route decisions, status updates, and any issues that come up along the way.",
     icon: Route,
   },
   {
-    title: "Compliance-aware support",
+    title: "Compliance handled upfront",
     description:
-      "Guidance aligned with documentation, duty exposure, regulated cargo requirements, and customs readiness.",
+      "Documentation, duty exposure, and regulatory requirements are reviewed before shipping — not scrambled at the border.",
     icon: ShieldCheck,
   },
 ];
@@ -28,13 +28,13 @@ const representativeBenefits = [
 export const metadata: Metadata = {
   title: "Contact Us",
   description:
-    "Contact Alpha Logistics at Alpha Apex Logistics to request a freight quote and connect with a dedicated customer representative.",
+    "Get a freight quote from Alpha Apex Logistics. Tell us what you're shipping and we'll connect you with a dedicated representative who handles everything from route planning to delivery.",
   keywords: [
-    "Alpha Logistics",
-    "request freight quote",
-    "logistics quote Qatar",
+    "Alpha Apex Logistics quote",
+    "freight quote Qatar",
+    "logistics quote GCC",
     "freight forwarding contact",
-    "dedicated logistics representative",
+    "dedicated logistics support",
   ],
 };
 
@@ -46,12 +46,12 @@ export default function ContactPage() {
           <div>
             <p className="kicker">Contact Us</p>
             <h1 className="page-title mt-3 max-w-3xl sm:mt-4">
-              Request a quote with a team that thinks beyond the rate.
+              Get a quote from a team that goes beyond the rate sheet.
             </h1>
             <p className="mt-4 max-w-2xl text-[0.85rem] leading-6 text-cool-gray sm:mt-5 sm:text-sm sm:leading-7">
-              Share your shipment requirements and we will align the right
-              mode, timeline, clearance path, and support model before your
-              cargo enters the supply chain.
+              Tell us what you're shipping. We'll find the right mode, timeline,
+              and clearance path — and make sure everything is lined up before
+              your cargo starts moving.
             </p>
           </div>
 
@@ -90,13 +90,13 @@ export default function ContactPage() {
               Dedicated Customer Representative
             </p>
             <h2 className="mt-2 text-2xl font-black leading-tight sm:mt-3 sm:text-4xl">
-              One main point of contact for every client.
+              You'll always know who to call.
             </h2>
             <p className="mt-4 text-[0.85rem] leading-6 text-white/68 sm:mt-5 sm:text-sm sm:leading-7">
-              Every Alpha Apex Logistics client is supported by a dedicated
-              representative who understands their cargo profile, preferred
-              lanes, documentation requirements, delivery expectations, and
-              commercial priorities.
+              Every client at Alpha Apex Logistics works with a dedicated
+              representative — someone who knows your cargo, your preferred
+              routes, your documentation needs, and what matters most to
+              your business.
             </p>
 
             <div className="mt-8 grid gap-4">
