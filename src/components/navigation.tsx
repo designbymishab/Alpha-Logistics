@@ -3,6 +3,7 @@
 import { useState, useEffect, useCallback } from "react";
 import { usePathname } from "next/navigation";
 import Link from "next/link";
+import Image from "next/image";
 import {
   Home,
   Truck,
@@ -62,12 +63,13 @@ export function Navigation() {
         >
           {/* ── Logo ── */}
           <Link href="/" className="nav-logo group" onClick={close}>
-            <span className="nav-logo-mark">
-              <span className="nav-mark-tl" />
-              <span className="nav-mark-tr" />
-              <span className="nav-mark-bl" />
-              <span className="nav-mark-br" />
-            </span>
+            <Image
+              src="/images/logo/android-chrome-512x512.png"
+              alt="Alpha Logistics Logo"
+              width={28}
+              height={28}
+              className="rounded-md"
+            />
             <span className="nav-logo-text">Alpha Logistics</span>
           </Link>
 

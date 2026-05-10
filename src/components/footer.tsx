@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 
 const footerLinks = [
   { label: "Services", href: "/services" },
@@ -12,12 +13,13 @@ export function Footer() {
       <div className="site-shell grid gap-8 py-10 sm:gap-10 sm:py-12 md:grid-cols-[1.3fr_1fr_1fr]">
         <div>
           <div className="flex items-center gap-3">
-            <span className="grid size-11 grid-cols-2 overflow-hidden rounded-br-[18px] rounded-tl-[18px]">
-              <span className="bg-white" />
-              <span className="bg-secondary" />
-              <span className="bg-cyan-accent" />
-              <span className="bg-gold-accent" />
-            </span>
+            <Image
+              src="/images/logo/android-chrome-512x512.png"
+              alt="Alpha Apex Logistics Logo"
+              width={44}
+              height={44}
+              className="rounded-xl"
+            />
             <div>
               <p className="mono-accent font-black">Alpha Apex Logistics</p>
               <p className="text-sm font-medium text-white/60">
