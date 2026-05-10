@@ -20,8 +20,8 @@ import seashippingImage from "../../public/images/seashipping.webp";
 import landshippingImage from "../../public/images/hero-logistics-trucks.webp";
 import poweringlogistics from "../../public/images/poweringlogistics.webp";
 import globalNetworkBg from "../../public/images/map.webp";
-import nationwideTruck from "../../public/images/nationwide-truck.webp";
-import nationwideWarehouse from "../../public/images/nationwide-warehouse.webp";
+import nationwideTruck from "../../public/images/nationwide-warehouse.webp";
+import nationwideWarehouse from "../../public/images/services.webp";
 
 export const metadata: Metadata = {
   title: "Home",
