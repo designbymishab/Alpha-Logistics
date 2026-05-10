@@ -108,7 +108,7 @@ export default function Home() {
     <div className="bg-background text-deep-blue">
       <section className="relative overflow-visible bg-background">
         <ScrollReveal>
-          <div className="site-shell pb-0 pt-8 sm:pt-16">
+          <div className="site-shell pb-0 pt-20 sm:pt-28 lg:pt-36">
           <div className="mx-auto max-w-5xl text-center">
             <h1 className="text-4xl font-black leading-[0.98] tracking-tight text-foreground sm:text-6xl lg:text-8xl">
               Delivering Your Cargo

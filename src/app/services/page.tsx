@@ -77,7 +77,7 @@ export default function ServicesPage() {
     <div className="text-deep-blue">
       <section className="section-band-soft overflow-hidden">
         <ScrollReveal>
-          <div className="site-shell grid gap-8 lg:grid-cols-[0.92fr_1.08fr] lg:items-center">
+          <div className="site-shell pt-12 sm:pt-20 lg:pt-24 grid gap-8 lg:grid-cols-[0.92fr_1.08fr] lg:items-center">
           <div>
             <p className="kicker">Shipping & Logistics Services</p>
             <h1 className="page-title mt-3 max-w-3xl text-balance sm:mt-4">

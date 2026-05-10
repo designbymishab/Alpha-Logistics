@@ -44,7 +44,7 @@ export default function ContactPage() {
     <div className="text-deep-blue">
       <section className="section-band-soft overflow-hidden">
         <ScrollReveal>
-          <div className="site-shell grid gap-8 lg:grid-cols-[0.95fr_1.05fr] lg:items-center">
+          <div className="site-shell pt-12 sm:pt-20 lg:pt-24 grid gap-8 lg:grid-cols-[0.95fr_1.05fr] lg:items-center">
           <div>
             <p className="kicker">Contact Us</p>
             <h1 className="page-title mt-3 max-w-3xl sm:mt-4">
