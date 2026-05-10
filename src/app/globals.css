@@ -215,6 +215,22 @@ html {
   .glass-panel {
     border-radius: 16px;
   }
+
+  /* Better mobile section spacing */
+  .global-network-section {
+    padding-block: 3rem;
+  }
+
+  /* Better touch targets */
+  .cta-primary,
+  .cta-gold {
+    min-height: 48px;
+  }
+
+  /* Prevent horizontal overflow on mobile */
+  .site-shell {
+    overflow-x: hidden;
+  }
 }
 
 .hero-image-parallax {
@@ -272,6 +288,16 @@ html {
 .card:hover {
   transform: translateY(-2px);
   box-shadow: 0 8px 24px rgba(10, 35, 66, 0.08);
+}
+
+@media (max-width: 639px) {
+  .card {
+    padding: 1.25rem;
+  }
+
+  .card:hover {
+    transform: none;
+  }
 }
 
 .btn {

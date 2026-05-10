@@ -8,7 +8,6 @@ import {
   Globe2,
   MapPin,
   Plane,
-  Search,
   ShieldCheck,
   Ship,
   Truck,
@@ -112,9 +111,6 @@ export default function Home() {
             <h1 className="text-4xl font-black leading-[0.98] tracking-tight text-foreground sm:text-6xl lg:text-8xl">
               Delivering Your Cargo
               <span className="mt-2 flex items-center justify-center gap-2 sm:gap-3 text-secondary">
-                {/* <span className="flex size-8 items-center justify-center rounded-full bg-secondary-100 sm:size-12">
-                  <Globe2 aria-hidden="true" className="size-4 sm:size-6" />
-                </span> */}
                 Worldwide
               </span>
             </h1>
@@ -124,25 +120,19 @@ export default function Home() {
               the GCC and international markets.
             </p>
 
-            <div className="mx-auto mt-6 flex max-w-xl flex-col gap-2 rounded-xl border border-border-color bg-white p-2 shadow-lg shadow-deep-blue/5 sm:mt-7 sm:grid sm:grid-cols-[1fr_1fr_48px]">
-              <div className="flex min-h-11 items-center gap-2 rounded-lg border border-border-color/50 bg-background px-3 text-left">
-                <MapPin aria-hidden="true" className="size-4 text-secondary" />
-                <span className="text-xs font-bold text-cool-gray">
-                  Enter pickup location
-                </span>
-              </div>
-              <div className="flex min-h-11 items-center gap-2 rounded-lg border border-border-color/50 bg-background px-3 text-left">
-                <MapPin aria-hidden="true" className="size-4 text-secondary" />
-                <span className="text-xs font-bold text-cool-gray">
-                  Enter destination location
-                </span>
-              </div>
+            <div className="mx-auto mt-6 flex max-w-md flex-col gap-3 sm:mt-7 sm:flex-row sm:items-center sm:justify-center">
               <Link
                 href="/contact"
-                aria-label="Search shipment route"
-                className="cta-primary flex min-h-11 items-center justify-center rounded-lg text-white transition"
+                className="cta-gold inline-flex h-12 items-center justify-center gap-2 rounded-full px-7 text-sm font-black"
               >
-                <Search aria-hidden="true" className="size-5" />
+                Get a Free Quote
+                <ArrowRight aria-hidden="true" className="size-4" />
+              </Link>
+              <Link
+                href="/services"
+                className="inline-flex h-12 items-center justify-center gap-2 rounded-full border border-border-color bg-white px-7 text-sm font-black text-deep-blue shadow-sm transition hover:border-secondary hover:shadow-md"
+              >
+                Our Services
               </Link>
             </div>
           </div>
@@ -232,27 +222,27 @@ export default function Home() {
                 </div>
 
                 {/* Floating Stat Badge */}
-                <div className="absolute -top-4 -left-4 rounded-2xl bg-gold-accent px-5 py-4 text-deep-blue shadow-xl shadow-gold-accent/30 sm:-left-6 sm:top-8 z-10">
-                   <p className="mono-accent text-3xl font-black drop-shadow-sm sm:text-4xl">
+                <div className="absolute -top-2 -left-2 rounded-2xl bg-gold-accent px-4 py-3 text-deep-blue shadow-xl shadow-gold-accent/30 sm:-left-6 sm:-top-4 sm:px-5 sm:py-4 z-10">
+                   <p className="mono-accent text-2xl font-black drop-shadow-sm sm:text-4xl">
                       10+
                    </p>
-                   <p className="mt-1 text-[0.65rem] font-black uppercase tracking-[0.14em] opacity-80 sm:text-xs">
+                   <p className="mt-0.5 text-[0.6rem] font-black uppercase tracking-[0.14em] opacity-80 sm:mt-1 sm:text-xs">
                       Years GCC Exp
                    </p>
                 </div>
               </div>
 
               <div className="flex flex-col justify-center lg:pl-2">
-                <div className="flex items-center gap-3">
-                  <span className="w-fit rounded-full bg-secondary/20 px-4 py-2 text-xs font-black uppercase tracking-[0.18em] text-secondary border border-secondary/20">
+                <div className="flex flex-wrap items-center gap-2 sm:gap-3">
+                  <span className="w-fit rounded-full bg-secondary/20 px-3 py-1.5 text-[0.65rem] font-black uppercase tracking-[0.18em] text-secondary border border-secondary/20 sm:px-4 sm:py-2 sm:text-xs">
                     Alpha Logistics
                   </span>
-                  <span className="flex items-center gap-1.5 text-[0.7rem] font-bold text-white/60">
-                    <ShieldCheck aria-hidden="true" className="size-4 text-secondary" />
+                  <span className="flex items-center gap-1.5 text-[0.65rem] font-bold text-white/60 sm:text-[0.7rem]">
+                    <ShieldCheck aria-hidden="true" className="size-3.5 text-secondary sm:size-4" />
                     Verified Network
                   </span>
                 </div>
-                <h2 className="mt-5 max-w-2xl text-4xl font-black leading-[1.05] text-white sm:mt-6 sm:text-5xl lg:text-6xl">
+                <h2 className="mt-4 max-w-2xl text-[1.65rem] font-black leading-[1.1] text-white sm:mt-6 sm:text-4xl lg:text-6xl">
                   Your{" "}
                   <span className="text-secondary drop-shadow-sm">Complete</span> Freight{" "}
                   Forwarding Partner
@@ -264,7 +254,7 @@ export default function Home() {
                   accountable from the first quote to final delivery.
                 </p>
 
-                <div className="mt-8 grid grid-cols-3 gap-3 sm:mt-10 sm:gap-4">
+                <div className="mt-6 grid grid-cols-3 gap-2 sm:mt-10 sm:gap-4">
                   {[
                     { mode: "AIR", icon: Plane },
                     { mode: "OCEAN", icon: Ship },
@@ -272,12 +262,12 @@ export default function Home() {
                   ].map(({ mode, icon: Icon }) => (
                     <div
                       key={mode}
-                      className="group flex flex-col items-center justify-center rounded-2xl border border-white/10 bg-white/[0.03] p-4 text-center transition hover:border-gold-accent/40 hover:bg-white/[0.08] hover:shadow-lg hover:shadow-gold-accent/5"
+                      className="group flex flex-col items-center justify-center rounded-xl border border-white/10 bg-white/[0.03] p-3 text-center transition hover:border-gold-accent/40 hover:bg-white/[0.08] hover:shadow-lg hover:shadow-gold-accent/5 sm:rounded-2xl sm:p-4"
                     >
-                      <span className="flex size-10 items-center justify-center rounded-full bg-white/10 text-white shadow-sm transition group-hover:scale-110 group-hover:bg-gold-accent group-hover:text-deep-blue">
-                        <Icon aria-hidden="true" className="size-5" />
+                      <span className="flex size-8 items-center justify-center rounded-full bg-white/10 text-white shadow-sm transition group-hover:scale-110 group-hover:bg-gold-accent group-hover:text-deep-blue sm:size-10">
+                        <Icon aria-hidden="true" className="size-4 sm:size-5" />
                       </span>
-                      <p className="mono-accent mt-3 text-lg font-black text-white sm:text-xl">
+                      <p className="mono-accent mt-2 text-sm font-black text-white sm:mt-3 sm:text-xl">
                         {mode}
                       </p>
                     </div>
@@ -358,7 +348,7 @@ export default function Home() {
         <div className="site-shell grid gap-8 lg:grid-cols-[0.9fr_1.1fr] lg:items-center lg:gap-10">
           <div>
             <p className="kicker">Powering Logistics</p>
-            <h2 className="mt-2 max-w-xl text-3xl font-black leading-tight text-foreground sm:mt-3 sm:text-5xl">
+            <h2 className="mt-2 max-w-xl text-2xl font-black leading-tight text-foreground sm:mt-3 sm:text-5xl">
               The engine behind your supply chain
             </h2>
             <p className="mt-4 max-w-xl text-[0.85rem] leading-6 text-cool-gray sm:mt-5 sm:text-sm sm:leading-7">
@@ -382,7 +372,7 @@ export default function Home() {
           </div>
 
           <div className="grid gap-3 sm:grid-cols-[1fr_0.72fr] sm:gap-4">
-            <div className="relative min-h-[240px] overflow-hidden rounded-xl bg-deep-blue sm:min-h-[360px]">
+            <div className="relative min-h-[200px] overflow-hidden rounded-xl bg-deep-blue sm:min-h-[360px]">
               <Image
                 src={poweringlogistics}
                 alt="Alpha Logistics ocean freight"
@@ -393,7 +383,7 @@ export default function Home() {
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/54 to-transparent" />
             </div>
-            <div className="grid gap-3 sm:gap-4">
+            <div className="grid grid-cols-2 gap-3 sm:grid-cols-1 sm:gap-4">
               <div className="flex flex-col justify-center rounded-xl bg-deep-blue p-5 text-white sm:p-6">
                 <Box aria-hidden="true" className="size-7 text-gold-accent sm:size-9" />
                 <p className="mono-accent mt-4 text-3xl font-black sm:mt-8 sm:text-4xl">10+</p>
@@ -481,7 +471,7 @@ export default function Home() {
           </div>
 
           {/* Branch Grid */}
-          <div className="mt-4 grid grid-cols-2 gap-2 sm:mt-5 sm:gap-3 lg:grid-cols-5">
+          <div className="mt-4 grid grid-cols-1 gap-2 min-[420px]:grid-cols-2 sm:mt-5 sm:gap-3 lg:grid-cols-5">
             {locations.slice(1).map(([country, label]) => (
               <Link
                 key={country}
@@ -509,7 +499,7 @@ export default function Home() {
           </div>
 
           {/* Bottom stat strip */}
-          <div className="mt-8 flex flex-wrap items-center justify-center gap-x-6 gap-y-4 rounded-2xl border border-white/[0.06] bg-white/[0.03] px-4 py-4 backdrop-blur-sm sm:mt-10 sm:gap-x-14 sm:px-6 sm:py-5">
+          <div className="mt-8 grid grid-cols-2 gap-4 rounded-2xl border border-white/[0.06] bg-white/[0.03] px-4 py-5 backdrop-blur-sm min-[480px]:grid-cols-4 sm:mt-10 sm:gap-x-14 sm:px-6 sm:py-5 sm:flex sm:flex-wrap sm:items-center sm:justify-center">
             {[
               ["6+", "Locations"],
               ["4", "Continents"],
@@ -551,20 +541,25 @@ export default function Home() {
               </div>
             </div>
             <div className="bg-background p-5 text-deep-blue sm:p-7">
-              <h3 className="text-2xl font-black">Quickly Track your Shipments</h3>
+              <h3 className="text-2xl font-black">Need shipment updates?</h3>
+              <p className="mt-3 text-sm leading-6 text-cool-gray">
+                Contact our team for real-time tracking updates, ETA confirmations, and status reports on your active shipments.
+              </p>
               <div className="mt-6 grid gap-3">
-                <div className="mono-accent rounded-lg border border-border-color px-4 py-3 text-sm font-bold text-cool-gray">
-                  ALX-QA-DOH-0001
-                </div>
-                <div className="rounded-lg border border-border-color px-4 py-3 text-sm font-bold text-cool-gray">
-                  Select your service
-                </div>
                 <Link
                   href="/contact"
-                  className="cta-primary inline-flex h-12 items-center justify-center rounded-lg text-sm font-black"
+                  className="cta-primary inline-flex h-12 items-center justify-center gap-2 rounded-lg text-sm font-black"
                 >
-                  Track Now
+                  Contact Our Team
+                  <ArrowRight aria-hidden="true" className="size-4" />
                 </Link>
+                <a
+                  href="tel:+97441424247"
+                  className="inline-flex h-12 items-center justify-center gap-2 rounded-lg border border-border-color bg-white text-sm font-black text-deep-blue transition hover:border-secondary"
+                >
+                  <MapPin aria-hidden="true" className="size-4 text-secondary" />
+                  +974 4142 4247
+                </a>
               </div>
             </div>
           </div>

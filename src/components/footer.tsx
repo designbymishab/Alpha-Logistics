@@ -61,7 +61,7 @@ export function Footer() {
           </div>
         </address>
         <div className="border-t border-white/10 pt-6 md:col-span-3">
-          <div className="flex flex-col gap-3 text-xs text-white/45 sm:flex-row sm:items-center sm:justify-between">
+          <div className="flex flex-col gap-2 text-xs text-white/45 sm:flex-row sm:items-center sm:justify-between sm:gap-3">
           <p>
             Copyright {new Date().getFullYear()} Alpha Apex Logistics. All
             rights reserved.

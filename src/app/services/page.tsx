@@ -88,12 +88,12 @@ export default function ServicesPage() {
             </p>
             <Link
               href="/contact"
-              className="cta-primary mt-7 inline-flex h-12 items-center justify-center rounded-full px-6 text-sm font-black"
+              className="cta-primary mt-6 mb-2 inline-flex h-12 items-center justify-center rounded-full px-6 text-sm font-black sm:mt-7 sm:mb-0"
             >
               Request a Quote
             </Link>
           </div>
-          <div className="relative min-h-[260px] overflow-hidden rounded-2xl bg-deep-blue shadow-2xl shadow-deep-blue/20 sm:min-h-[450px]">
+          <div className="relative min-h-[220px] overflow-hidden rounded-2xl bg-deep-blue shadow-2xl shadow-deep-blue/20 sm:min-h-[450px]">
             <Image
               src={oceanImage}
               alt="Alpha Logistics freight services across ocean and air"

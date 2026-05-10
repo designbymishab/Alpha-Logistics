@@ -55,7 +55,7 @@ export default function ContactPage() {
             </p>
           </div>
 
-          <div className="relative min-h-[260px] overflow-hidden rounded-2xl bg-deep-blue shadow-2xl shadow-deep-blue/20 sm:min-h-[430px]">
+          <div className="relative min-h-[220px] overflow-hidden rounded-2xl bg-deep-blue shadow-2xl shadow-deep-blue/20 sm:min-h-[430px]">
             <Image
               src={containerImage}
               alt="Alpha Logistics black shipping container contact visual"
