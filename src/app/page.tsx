@@ -13,15 +13,15 @@ import {
   Truck,
   UsersRound,
 } from "lucide-react";
-import containerImage from "../../public/images/hero-black-container.png";
-import oceanImage from "../../public/images/hero-global-logistics.png";
-import airshippingImage from "../../public/images/airshipping.png";
-import seashippingImage from "../../public/images/seashipping.png";
-import landshippingImage from "../../public/images/landshipping.png";
-import poweringlogistics from "../../public/images/poweringlogistics.png";
-import globalNetworkBg from "../../public/images/map.png";
-import nationwideTruck from "../../public/images/nationwide-truck.png";
-import nationwideWarehouse from "../../public/images/nationwide-warehouse.png";
+import containerImage from "../../public/images/hero-black-container.webp";
+import oceanImage from "../../public/images/hero-global-logistics.webp";
+import airshippingImage from "../../public/images/airshipping.webp";
+import seashippingImage from "../../public/images/seashipping.webp";
+import landshippingImage from "../../public/images/hero-logistics-trucks.webp";
+import poweringlogistics from "../../public/images/poweringlogistics.webp";
+import globalNetworkBg from "../../public/images/map.webp";
+import nationwideTruck from "../../public/images/nationwide-truck.webp";
+import nationwideWarehouse from "../../public/images/nationwide-warehouse.webp";
 
 export const metadata: Metadata = {
   title: "Home",
@@ -197,7 +197,7 @@ export default function Home() {
                     className="object-cover opacity-90"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-[#0A2342]/90 via-transparent to-transparent" />
-                  
+
                   {/* Floating Badge inside Warehouse image */}
                   <div className="absolute bottom-5 left-5 rounded-xl border border-white/10 bg-[#0A2342]/60 p-4 backdrop-blur-md shadow-lg shadow-black/20">
                     <p className="text-[0.65rem] font-black uppercase tracking-[0.18em] text-cyan-accent">
@@ -208,7 +208,7 @@ export default function Home() {
                     </p>
                   </div>
                 </div>
-                
+
                 {/* Floating Image (Truck) */}
                 <div className="absolute -bottom-2 -right-2 hidden sm:block h-[260px] w-[280px] overflow-hidden rounded-2xl border-[6px] border-[#0A2342] bg-deep-blue shadow-2xl shadow-black/40 backdrop-blur-sm lg:-bottom-6 lg:-right-6">
                   <Image
@@ -223,12 +223,12 @@ export default function Home() {
 
                 {/* Floating Stat Badge */}
                 <div className="absolute -top-2 -left-2 rounded-2xl bg-gold-accent px-4 py-3 text-deep-blue shadow-xl shadow-gold-accent/30 sm:-left-6 sm:-top-4 sm:px-5 sm:py-4 z-10">
-                   <p className="mono-accent text-2xl font-black drop-shadow-sm sm:text-4xl">
-                      10+
-                   </p>
-                   <p className="mt-0.5 text-[0.6rem] font-black uppercase tracking-[0.14em] opacity-80 sm:mt-1 sm:text-xs">
-                      Years GCC Exp
-                   </p>
+                  <p className="mono-accent text-2xl font-black drop-shadow-sm sm:text-4xl">
+                    10+
+                  </p>
+                  <p className="mt-0.5 text-[0.6rem] font-black uppercase tracking-[0.14em] opacity-80 sm:mt-1 sm:text-xs">
+                    Years GCC Exp
+                  </p>
                 </div>
               </div>
 

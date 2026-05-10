@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import { Headset, Route, ShieldCheck, Sparkles } from "lucide-react";
 import { RequestQuoteForm } from "@/components/request-quote-form";
-import containerImage from "../../../public/images/hero-black-container.png";
+import containerImage from "../../../public/images/hero-black-container.webp";
 
 const representativeBenefits = [
   {

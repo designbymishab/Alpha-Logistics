@@ -90,9 +90,11 @@ export default function BranchesPage() {
           </div>
 
           <div className="relative min-h-[250px] overflow-hidden rounded-2xl bg-white p-4 shadow-2xl shadow-deep-blue/10 sm:min-h-[460px] sm:p-5">
-            <div className="absolute inset-0 opacity-70">
-              <div className="h-full bg-[radial-gradient(circle_at_18%_50%,#0D47A1_0_5px,transparent_6px),radial-gradient(circle_at_45%_42%,#1565C0_0_5px,transparent_6px),radial-gradient(circle_at_58%_62%,#00BCD4_0_5px,transparent_6px),radial-gradient(circle_at_72%_38%,#D4A017_0_5px,transparent_6px),radial-gradient(circle_at_82%_66%,#0D47A1_0_5px,transparent_6px),linear-gradient(120deg,transparent_18%,rgba(13,71,161,.12)_18%_19%,transparent_19%_46%,rgba(0,188,212,.16)_46%_47%,transparent_47%)]" />
-            </div>
+            <img
+              src="/images/branchs.webp"
+              alt="Alpha Apex Logistics branch office"
+              className="absolute inset-0 h-full w-full object-cover"
+            />
             <div className="relative flex h-full flex-col justify-end">
               <div className="max-w-md rounded-xl bg-deep-blue p-5 text-white shadow-xl shadow-primary/10">
                 <p className="kicker">Qatar HQ</p>

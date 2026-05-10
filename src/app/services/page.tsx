@@ -10,7 +10,7 @@ import {
   Truck,
   type LucideIcon,
 } from "lucide-react";
-import oceanImage from "../../../public/images/hero-global-logistics.png";
+import oceanImage from "../../../public/images/global-map-bg.webp";
 
 type Service = {
   title: string;
