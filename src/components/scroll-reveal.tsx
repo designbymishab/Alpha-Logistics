@@ -1,7 +1,7 @@
 "use client";
 
 import { ReactNode, useEffect, useState } from "react";
-import { motion } from "framer-motion";
+import { motion, Variants } from "framer-motion";
 
 interface ScrollRevealProps {
   children: ReactNode;
@@ -34,7 +34,7 @@ export function ScrollReveal({
     return <div className={className}>{children}</div>;
   }
 
-  const containerVariants = {
+  const containerVariants: Variants = {
     hidden: {
       opacity: 0,
       y: direction === "up" ? 40 : direction === "down" ? -40 : 0,
@@ -87,7 +87,7 @@ export function ScrollRevealChild({
     return <div className={className}>{children}</div>;
   }
 
-  const childVariants = {
+  const childVariants: Variants = {
     hidden: {
       opacity: 0,
       y: direction === "up" ? 20 : direction === "down" ? -20 : 0,
