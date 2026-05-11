@@ -19,8 +19,8 @@ import airshippingImage from "../../public/images/airshipping.webp";
 import seashippingImage from "../../public/images/seashipping.webp";
 import landshippingImage from "../../public/images/hero-logistics-trucks.webp";
 import poweringlogistics from "../../public/images/poweringlogistics.webp";
-import globalNetworkBg from "../../public/images/map.webp";
-import nationwideTruck from "../../public/images/map.webp";
+import globalNetworkBg from "../../public/images/market.webp";
+import nationwideTruck from "../../public/images/containers.webp";
 import nationwideWarehouse from "../../public/images/truck.gif";
 import { ScrollReveal } from "@/components/scroll-reveal";
 
@@ -203,25 +203,25 @@ export default function Home() {
                     <div className="absolute inset-0 bg-gradient-to-t from-[#0A2342]/90 via-transparent to-transparent" />
 
                     {/* Floating Badge inside Warehouse image */}
-                    <div className="absolute bottom-5 left-5 rounded-xl border border-white/10 bg-[#0A2342]/60 p-4 backdrop-blur-md shadow-lg shadow-black/20">
+                    <div className="absolute bottom-2 right-2 lg:bottom-8 lg:left-8 rounded-xl border border-white/10 bg-[#0A2342]/60 p-3 backdrop-blur-md shadow-lg shadow-black/20">
                       <p className="text-[0.65rem] font-black uppercase tracking-[0.18em] text-cyan-accent">
                         Route intelligence
                       </p>
-                      <p className="mt-1 text-xl font-black leading-tight text-white sm:text-2xl">
+                      <p className="mt-1 text-lg lg:text-xl font-black leading-tight text-white sm:text-2xl">
                         Synced operations
                       </p>
                     </div>
                   </div>
 
                   {/* Floating Image (Truck) */}
-                  <div className="absolute -bottom-2 -right-2 hidden sm:block h-[260px] w-[280px] overflow-hidden rounded-2xl border-[6px] border-[#0A2342] bg-deep-blue shadow-2xl shadow-black/40 backdrop-blur-sm lg:-bottom-6 lg:-right-6">
+                  <div className="absolute -bottom-8 -right-4 hidden sm:block h-[330px] w-[280px] overflow-hidden">
                     <Image
                       src={nationwideTruck}
                       alt="Premium logistics delivery truck"
                       fill
                       placeholder="blur"
-                      sizes="280px"
-                      className="object-cover"
+                      sizes="250px" 
+                      className="object-contain object-right "
                     />
                   </div>
 
