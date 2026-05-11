@@ -114,15 +114,15 @@ html {
 
 .cta-blue {
   background: var(--blue-accent);
-  color: #1E1E1E;
-  box-shadow: 0 4px 16px rgba(212, 160, 23, 0.25);
+  color: #ffffff;
+  box-shadow: 0 4px 16px rgba(21, 101, 192, 0.25);
 }
 
 .cta-blue:hover {
   background: #0D47A1;
-  color: #1E1E1E;
+  color: #ffffff;
   transform: translateY(-1px);
-  box-shadow: 0 6px 20px rgba(212, 160, 23, 0.35);
+  box-shadow: 0 6px 20px rgba(21, 101, 192, 0.35);
 }
 
 .section-pad {
@@ -146,7 +146,7 @@ html {
   width: 100%;
   padding-block: 5rem;
   background:
-    radial-gradient(circle at 80% 0%, rgba(212, 160, 23, 0.15), transparent 24rem),
+    radial-gradient(circle at 80% 0%, rgba(21, 101, 192, 0.15), transparent 24rem),
     linear-gradient(135deg, #0A2342 0%, #0d2535 56%, #0A2342 100%);
   color: #ffffff;
 }
@@ -458,17 +458,17 @@ html {
     border-radius: 100px;
     font-size: 0.78rem;
     font-weight: 800;
-    color: #1E1E1E;
+    color: #ffffff;
     background: var(--blue-accent);
     text-decoration: none;
-    box-shadow: 0 4px 16px rgba(212, 160, 23, 0.22);
+    box-shadow: 0 4px 16px rgba(21, 101, 192, 0.22);
     transition: background 0.2s ease, transform 0.2s ease, box-shadow 0.2s ease;
   }
 
   .nav-cta-desktop:hover {
     background: #0D47A1;
     transform: translateY(-2px);
-    box-shadow: 0 6px 22px rgba(212, 160, 23, 0.32);
+    box-shadow: 0 6px 22px rgba(21, 101, 192, 0.32);
   }
 }
 
@@ -690,10 +690,10 @@ html {
   border-radius: 14px;
   font-size: 0.9rem;
   font-weight: 800;
-  color: #1E1E1E;
+  color: #ffffff;
   background: var(--blue-accent);
   text-decoration: none;
-  box-shadow: 0 4px 20px rgba(212, 160, 23, 0.25);
+  box-shadow: 0 4px 20px rgba(21, 101, 192, 0.25);
   transition: background 0.2s ease, transform 0.2s ease;
 }
 

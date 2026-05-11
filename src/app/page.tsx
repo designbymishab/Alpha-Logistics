@@ -226,7 +226,7 @@ export default function Home() {
                   </div>
 
                   {/* Floating Stat Badge */}
-                  <div className="absolute -top-2 -left-2 rounded-2xl bg-blue-accent px-4 py-3 text-deep-blue shadow-xl shadow-blue-accent/30 sm:-left-6 sm:-top-4 sm:px-5 sm:py-4 z-10">
+                  <div className="absolute -top-2 -left-2 rounded-2xl bg-blue-accent px-4 py-3 text-white shadow-xl shadow-blue-accent/30 sm:-left-6 sm:-top-4 sm:px-5 sm:py-4 z-10">
                     <p className="mono-accent text-2xl font-black drop-shadow-sm sm:text-4xl">
                       10+
                     </p>
@@ -268,7 +268,7 @@ export default function Home() {
                         key={mode}
                         className="group flex flex-col items-center justify-center rounded-xl border border-white/10 bg-white/[0.03] p-3 text-center transition hover:border-blue-accent/40 hover:bg-white/[0.08] hover:shadow-lg hover:shadow-blue-accent/5 sm:rounded-2xl sm:p-4"
                       >
-                        <span className="flex size-8 items-center justify-center rounded-full bg-white/10 text-white shadow-sm transition group-hover:scale-110 group-hover:bg-blue-accent group-hover:text-deep-blue sm:size-10">
+                        <span className="flex size-8 items-center justify-center rounded-full bg-white/10 text-white shadow-sm transition group-hover:scale-110 group-hover:bg-blue-accent group-hover:text-white sm:size-10">
                           <Icon aria-hidden="true" className="size-4 sm:size-5" />
                         </span>
                         <p className="mono-accent mt-2 text-sm font-black text-white sm:mt-3 sm:text-xl">
