@@ -8,12 +8,12 @@
   --secondary: #1565C0;
   --secondary-100: #DCE3EA;
   --secondary-700: #0D47A1;
-  --accent: #D4A017;
+  --accent: #1565C0;
   --accent-700: #0D47A1;
   --surface-soft: #F5F7FA;
   --deep-blue: #0A2342;
   --muted-blue: #DCE3EA;
-  --gold-accent: #D4A017;
+  --blue-accent: #1565C0;
   --cyan-accent: #00BCD4;
   --steel-gray: #8A99A8;
   --cool-gray: #6B7280;
@@ -36,7 +36,7 @@
   --color-surface-soft: var(--surface-soft);
   --color-deep-blue: var(--deep-blue);
   --color-muted-blue: var(--muted-blue);
-  --color-gold-accent: var(--gold-accent);
+  --color-blue-accent: var(--blue-accent);
   --color-cyan-accent: var(--cyan-accent);
   --color-steel-gray: var(--steel-gray);
   --color-cool-gray: var(--cool-gray);
@@ -112,14 +112,14 @@ html {
   box-shadow: 0 6px 20px rgba(13, 71, 161, 0.35);
 }
 
-.cta-gold {
-  background: var(--gold-accent);
+.cta-blue {
+  background: var(--blue-accent);
   color: #1E1E1E;
   box-shadow: 0 4px 16px rgba(212, 160, 23, 0.25);
 }
 
-.cta-gold:hover {
-  background: #c8920f;
+.cta-blue:hover {
+  background: #0D47A1;
   color: #1E1E1E;
   transform: translateY(-1px);
   box-shadow: 0 6px 20px rgba(212, 160, 23, 0.35);
@@ -223,7 +223,7 @@ html {
 
   /* Better touch targets */
   .cta-primary,
-  .cta-gold {
+  .cta-blue {
     min-height: 48px;
   }
 
@@ -373,7 +373,7 @@ html {
 .nav-mark-tl { background: var(--deep-blue); }
 .nav-mark-tr { background: var(--secondary); }
 .nav-mark-bl { background: var(--cyan-accent); }
-.nav-mark-br { background: var(--gold-accent); }
+.nav-mark-br { background: var(--blue-accent); }
 
 .nav-logo-text {
   font-family: var(--font-mono);
@@ -459,14 +459,14 @@ html {
     font-size: 0.78rem;
     font-weight: 800;
     color: #1E1E1E;
-    background: var(--gold-accent);
+    background: var(--blue-accent);
     text-decoration: none;
     box-shadow: 0 4px 16px rgba(212, 160, 23, 0.22);
     transition: background 0.2s ease, transform 0.2s ease, box-shadow 0.2s ease;
   }
 
   .nav-cta-desktop:hover {
-    background: #c8920f;
+    background: #0D47A1;
     transform: translateY(-2px);
     box-shadow: 0 6px 22px rgba(212, 160, 23, 0.32);
   }
@@ -691,14 +691,14 @@ html {
   font-size: 0.9rem;
   font-weight: 800;
   color: #1E1E1E;
-  background: var(--gold-accent);
+  background: var(--blue-accent);
   text-decoration: none;
   box-shadow: 0 4px 20px rgba(212, 160, 23, 0.25);
   transition: background 0.2s ease, transform 0.2s ease;
 }
 
 .nav-drawer-cta:hover {
-  background: #c8920f;
+  background: #0D47A1;
   transform: translateY(-1px);
 }
 

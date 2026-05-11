@@ -87,10 +87,10 @@ export default function ContactPage() {
           <RequestQuoteForm />
 
           <aside className="rounded-xl bg-deep-blue p-6 text-white shadow-2xl shadow-deep-blue/20 sm:p-8 lg:sticky lg:top-28">
-            <span className="flex size-14 items-center justify-center rounded-full bg-gold-accent text-white">
+            <span className="flex size-14 items-center justify-center rounded-full bg-blue-accent text-white">
               <Headset aria-hidden="true" className="size-7" />
             </span>
-            <p className="mt-6 text-sm font-black uppercase tracking-[0.22em] text-gold-accent">
+            <p className="mt-6 text-sm font-black uppercase tracking-[0.22em] text-blue-accent">
               Dedicated Customer Representative
             </p>
             <h2 className="mt-2 text-2xl font-black leading-tight sm:mt-3 sm:text-4xl">
@@ -112,7 +112,7 @@ export default function ContactPage() {
                     key={item.title}
                     className="grid grid-cols-[44px_1fr] gap-4 border-t border-white/15 pt-4"
                   >
-                    <span className="flex size-11 items-center justify-center rounded-full bg-white/10 text-gold-accent">
+                    <span className="flex size-11 items-center justify-center rounded-full bg-white/10 text-blue-accent">
                       <Icon aria-hidden="true" className="size-5" />
                     </span>
                     <div>

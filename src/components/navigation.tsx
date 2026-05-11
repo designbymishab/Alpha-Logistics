@@ -113,7 +113,7 @@ export function Navigation() {
           >
             {/* Background abstract decorators */}
             <div className="absolute top-0 right-0 w-[800px] h-[800px] bg-secondary/15 rounded-full blur-[120px] -translate-y-1/2 translate-x-1/3 pointer-events-none" />
-            <div className="absolute bottom-0 left-0 w-[600px] h-[600px] bg-gold-accent/10 rounded-full blur-[100px] translate-y-1/3 -translate-x-1/4 pointer-events-none" />
+            <div className="absolute bottom-0 left-0 w-[600px] h-[600px] bg-blue-accent/10 rounded-full blur-[100px] translate-y-1/3 -translate-x-1/4 pointer-events-none" />
             
             <div className="site-shell relative z-10 w-full max-w-6xl mx-auto pt-32 sm:pt-40 pb-12 my-auto min-h-max flex flex-col justify-center">
               <motion.div
@@ -133,14 +133,14 @@ export function Navigation() {
                           onClick={() => setIsOpen(false)}
                           className="group relative flex items-baseline gap-4 sm:gap-6 lg:gap-8 text-[2rem] sm:text-5xl md:text-6xl lg:text-7xl font-black text-white transition-colors w-fit leading-[0.9]"
                         >
-                          <span className="text-xs sm:text-lg lg:text-xl font-mono text-white/50 group-hover:text-gold-accent/80 transition-colors">
+                          <span className="text-xs sm:text-lg lg:text-xl font-mono text-white/50 group-hover:text-blue-accent/80 transition-colors">
                             {item.number}
                           </span>
-                          <span className="uppercase tracking-tighter group-hover:text-gold-accent transition-colors duration-300">
+                          <span className="uppercase tracking-tighter group-hover:text-blue-accent transition-colors duration-300">
                             {item.label}
                           </span>
                           {isActive && (
-                            <span className="absolute -left-4 sm:-left-8 lg:-left-12 top-1/2 -translate-y-1/2 w-2 sm:w-4 lg:w-6 h-1 sm:h-2 bg-gold-accent rounded-full" />
+                            <span className="absolute -left-4 sm:-left-8 lg:-left-12 top-1/2 -translate-y-1/2 w-2 sm:w-4 lg:w-6 h-1 sm:h-2 bg-blue-accent rounded-full" />
                           )}
                         </Link>
                       </motion.div>
@@ -159,9 +159,9 @@ export function Navigation() {
                   <p className="text-[0.65rem] sm:text-xs font-black uppercase tracking-[0.2em] text-white/40 mb-3">
                     Contact Headquarters
                   </p>
-                  <a href="tel:+97441424247" className="text-white text-lg sm:text-2xl font-black font-mono hover:text-gold-accent transition-colors inline-flex items-center gap-3">
+                  <a href="tel:+97441424247" className="text-white text-lg sm:text-2xl font-black font-mono hover:text-blue-accent transition-colors inline-flex items-center gap-3">
                     <span className="flex size-8 sm:size-10 items-center justify-center rounded-full bg-white/10">
-                      <Phone size={16} className="text-gold-accent sm:w-5 sm:h-5" />
+                      <Phone size={16} className="text-blue-accent sm:w-5 sm:h-5" />
                     </span>
                     +974 4142 4247
                   </a>
@@ -170,7 +170,7 @@ export function Navigation() {
                   <p className="text-[0.65rem] sm:text-xs font-black uppercase tracking-[0.2em] text-white/40 mb-3">
                     Quick Action
                   </p>
-                  <Link href="/contact" onClick={() => setIsOpen(false)} className="inline-flex items-center gap-2 text-gold-accent hover:text-white font-black text-sm sm:text-base uppercase tracking-wider transition-colors bg-white/5 hover:bg-white/10 px-5 sm:px-6 py-2 sm:py-3 rounded-full border border-white/10 hover:border-white/30">
+                  <Link href="/contact" onClick={() => setIsOpen(false)} className="inline-flex items-center gap-2 text-blue-accent hover:text-white font-black text-sm sm:text-base uppercase tracking-wider transition-colors bg-white/5 hover:bg-white/10 px-5 sm:px-6 py-2 sm:py-3 rounded-full border border-white/10 hover:border-white/30">
                     Request a Quote
                     <ArrowRight size={16} />
                   </Link>

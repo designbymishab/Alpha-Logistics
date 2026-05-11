@@ -42,7 +42,7 @@ export function Footer() {
               <Link
                 key={item.href}
                 href={item.href}
-                className="transition hover:text-gold-accent"
+                className="transition hover:text-blue-accent"
               >
                 {item.label}
               </Link>
@@ -57,7 +57,7 @@ export function Footer() {
           <div className="mt-4 space-y-2 text-sm leading-6 text-white/62">
             <p>Office 212, Al Suhaim Tower</p>
             <p>Doha, Qatar</p>
-            <a className="mono-accent font-black text-gold-accent" href="tel:+97441424247">
+            <a className="mono-accent font-black text-blue-accent" href="tel:+97441424247">
               +974 4142 4247
             </a>
           </div>

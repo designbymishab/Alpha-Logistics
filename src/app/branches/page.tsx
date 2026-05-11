@@ -105,7 +105,7 @@ export default function BranchesPage() {
                 </h2>
                 <a
                   href="tel:+97441424247"
-                  className="mt-4 inline-flex items-center gap-2 text-sm font-black text-gold-accent"
+                  className="mt-4 inline-flex items-center gap-2 text-sm font-black text-blue-accent"
                 >
                   <Phone aria-hidden="true" className="size-4" />
                   <span className="mono-accent">+974 4142 4247</span>

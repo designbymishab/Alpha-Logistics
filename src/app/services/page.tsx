@@ -137,7 +137,7 @@ export default function ServicesPage() {
                 key={service.title}
                 className={`group flex min-h-[280px] flex-col rounded-xl border bg-white p-6 shadow-lg shadow-primary/5 transition hover:-translate-y-1 hover:shadow-xl hover:shadow-primary/10 ${
                   featured
-                    ? "border-gold-accent/30 md:col-span-2 xl:col-span-1"
+                    ? "border-blue-accent/30 md:col-span-2 xl:col-span-1"
                     : "border-border-color"
                 }`}
               >
@@ -145,7 +145,7 @@ export default function ServicesPage() {
                   <span className="flex size-12 items-center justify-center rounded-xl bg-secondary-100 text-secondary">
                     <Icon aria-hidden="true" className="size-6" />
                   </span>
-                  <span className="flex size-9 items-center justify-center rounded-full bg-surface-soft text-deep-blue transition group-hover:bg-gold-accent group-hover:text-white">
+                  <span className="flex size-9 items-center justify-center rounded-full bg-surface-soft text-deep-blue transition group-hover:bg-blue-accent group-hover:text-white">
                     <ArrowRight aria-hidden="true" className="size-4" />
                   </span>
                 </div>

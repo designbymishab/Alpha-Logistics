@@ -125,7 +125,7 @@ export default function Home() {
               <div className="mx-auto mt-6 flex max-w-md flex-col gap-3 sm:mt-7 sm:flex-row sm:items-center sm:justify-center">
                 <Link
                   href="/contact"
-                  className="cta-gold inline-flex h-12 items-center justify-center gap-2 rounded-full px-7 text-sm font-black"
+                  className="cta-blue inline-flex h-12 items-center justify-center gap-2 rounded-full px-7 text-sm font-black"
                 >
                   Get a Free Quote
                   <ArrowRight aria-hidden="true" className="size-4" />
@@ -226,7 +226,7 @@ export default function Home() {
                   </div>
 
                   {/* Floating Stat Badge */}
-                  <div className="absolute -top-2 -left-2 rounded-2xl bg-gold-accent px-4 py-3 text-deep-blue shadow-xl shadow-gold-accent/30 sm:-left-6 sm:-top-4 sm:px-5 sm:py-4 z-10">
+                  <div className="absolute -top-2 -left-2 rounded-2xl bg-blue-accent px-4 py-3 text-deep-blue shadow-xl shadow-blue-accent/30 sm:-left-6 sm:-top-4 sm:px-5 sm:py-4 z-10">
                     <p className="mono-accent text-2xl font-black drop-shadow-sm sm:text-4xl">
                       10+
                     </p>
@@ -266,9 +266,9 @@ export default function Home() {
                     ].map(({ mode, icon: Icon }) => (
                       <div
                         key={mode}
-                        className="group flex flex-col items-center justify-center rounded-xl border border-white/10 bg-white/[0.03] p-3 text-center transition hover:border-gold-accent/40 hover:bg-white/[0.08] hover:shadow-lg hover:shadow-gold-accent/5 sm:rounded-2xl sm:p-4"
+                        className="group flex flex-col items-center justify-center rounded-xl border border-white/10 bg-white/[0.03] p-3 text-center transition hover:border-blue-accent/40 hover:bg-white/[0.08] hover:shadow-lg hover:shadow-blue-accent/5 sm:rounded-2xl sm:p-4"
                       >
-                        <span className="flex size-8 items-center justify-center rounded-full bg-white/10 text-white shadow-sm transition group-hover:scale-110 group-hover:bg-gold-accent group-hover:text-deep-blue sm:size-10">
+                        <span className="flex size-8 items-center justify-center rounded-full bg-white/10 text-white shadow-sm transition group-hover:scale-110 group-hover:bg-blue-accent group-hover:text-deep-blue sm:size-10">
                           <Icon aria-hidden="true" className="size-4 sm:size-5" />
                         </span>
                         <p className="mono-accent mt-2 text-sm font-black text-white sm:mt-3 sm:text-xl">
@@ -281,7 +281,7 @@ export default function Home() {
                   <div className="mt-8 flex flex-col gap-3 sm:mt-10 sm:flex-row">
                     <Link
                       href="/contact"
-                      className="cta-gold inline-flex h-12 items-center justify-center rounded-full px-8 text-sm font-black"
+                      className="cta-blue inline-flex h-12 items-center justify-center rounded-full px-8 text-sm font-black"
                     >
                       Get a Quote
                     </Link>
@@ -338,7 +338,7 @@ export default function Home() {
                       </span>
                       <div className="flex items-end justify-between gap-4">
                         <h3 className="text-2xl font-black">{service.title}</h3>
-                        <span className="flex size-10 shrink-0 items-center justify-center rounded-full bg-white/16 transition group-hover:bg-gold-accent">
+                        <span className="flex size-10 shrink-0 items-center justify-center rounded-full bg-white/16 transition group-hover:bg-blue-accent">
                           <ArrowRight aria-hidden="true" className="size-4" />
                         </span>
                       </div>
@@ -393,7 +393,7 @@ export default function Home() {
               </div>
               <div className="grid grid-cols-2 gap-3 sm:grid-cols-1 sm:gap-4">
                 <div className="flex flex-col justify-center rounded-xl bg-deep-blue p-5 text-white sm:p-6">
-                  <Box aria-hidden="true" className="size-7 text-gold-accent sm:size-9" />
+                  <Box aria-hidden="true" className="size-7 text-blue-accent sm:size-9" />
                   <p className="mono-accent mt-4 text-3xl font-black sm:mt-8 sm:text-4xl">10+</p>
                   <p className="mt-1 text-xs font-bold text-white/62 sm:mt-2 sm:text-sm">
                     Years of regional freight experience
@@ -425,7 +425,7 @@ export default function Home() {
           <div className="absolute inset-0 bg-gradient-to-b from-[#0A2342] via-transparent to-[#0A2342]/90" />
           <div className="absolute inset-0 bg-gradient-to-r from-[#0A2342]/90 via-[#0A2342]/20 to-[#0A2342]/90" />
           <div className="absolute left-1/2 top-0 -translate-x-1/2 w-[800px] h-[800px] rounded-full bg-secondary/[0.08] blur-[120px]" />
-          <div className="absolute -bottom-20 -left-20 size-96 rounded-full bg-gold-accent/[0.08] blur-[100px]" />
+          <div className="absolute -bottom-20 -left-20 size-96 rounded-full bg-blue-accent/[0.08] blur-[100px]" />
           <div className="absolute right-0 top-1/4 size-72 rounded-full bg-cyan-accent/[0.06] blur-[80px]" />
         </div>
 
@@ -439,7 +439,7 @@ export default function Home() {
               </span>
               <h2 className="mt-5 text-3xl font-black leading-[1.06] text-white sm:mt-6 sm:text-5xl lg:text-[3.4rem]">
                 Offices where the{" "}
-                <span className="bg-gradient-to-r from-gold-accent to-[#f0c040] bg-clip-text text-transparent">
+                <span className="bg-gradient-to-r from-blue-accent to-[#42A5F5] bg-clip-text text-transparent">
                   trade moves
                 </span>
               </h2>
@@ -454,18 +454,18 @@ export default function Home() {
             <div className="relative mt-12">
               <Link
                 href="/branches"
-                className="group relative block overflow-hidden rounded-2xl border border-gold-accent/25 bg-gradient-to-br from-white/[0.07] to-white/[0.02] p-1 backdrop-blur-md transition hover:border-gold-accent/40"
+                className="group relative block overflow-hidden rounded-2xl border border-blue-accent/25 bg-gradient-to-br from-white/[0.07] to-white/[0.02] p-1 backdrop-blur-md transition hover:border-blue-accent/40"
               >
-                <div className="absolute -right-10 -top-10 size-52 rounded-full bg-gold-accent/10 blur-3xl transition-all group-hover:bg-gold-accent/15" />
+                <div className="absolute -right-10 -top-10 size-52 rounded-full bg-blue-accent/10 blur-3xl transition-all group-hover:bg-blue-accent/15" />
                 <div className="absolute -bottom-8 -left-8 size-40 rounded-full bg-secondary/10 blur-3xl" />
                 <div className="relative flex flex-col gap-5 rounded-xl bg-white/[0.04] p-6 sm:flex-row sm:items-center sm:p-8">
-                  <div className="flex size-16 shrink-0 items-center justify-center rounded-2xl bg-gradient-to-br from-gold-accent to-[#c8920f] shadow-lg shadow-gold-accent/25">
+                  <div className="flex size-16 shrink-0 items-center justify-center rounded-2xl bg-gradient-to-br from-blue-accent to-[#0D47A1] shadow-lg shadow-blue-accent/25">
                     <MapPin aria-hidden="true" className="size-7 text-white" />
                   </div>
                   <div className="flex-1">
                     <div className="flex items-center gap-3">
                       <h3 className="text-2xl font-black text-white sm:text-3xl">Qatar</h3>
-                      <span className="rounded-full bg-gold-accent/15 px-3 py-1 text-[0.65rem] font-black uppercase tracking-[0.2em] text-gold-accent">
+                      <span className="rounded-full bg-blue-accent/15 px-3 py-1 text-[0.65rem] font-black uppercase tracking-[0.2em] text-blue-accent">
                         Headquarters
                       </span>
                     </div>
@@ -473,7 +473,7 @@ export default function Home() {
                       Our central hub in Doha — coordinating air, ocean, and land shipments across every GCC and international route.
                     </p>
                   </div>
-                  <span className="flex size-12 shrink-0 items-center justify-center rounded-full border border-white/10 bg-white/[0.06] text-gold-accent transition group-hover:border-gold-accent/30 group-hover:bg-gold-accent group-hover:text-white">
+                  <span className="flex size-12 shrink-0 items-center justify-center rounded-full border border-white/10 bg-white/[0.06] text-blue-accent transition group-hover:border-blue-accent/30 group-hover:bg-blue-accent group-hover:text-white">
                     <ArrowRight aria-hidden="true" className="size-5 transition group-hover:translate-x-0.5" />
                   </span>
                 </div>
