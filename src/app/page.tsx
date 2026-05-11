@@ -351,7 +351,7 @@ export default function Home() {
         </ScrollReveal>
       </section>
 
-      <section className="bg-white pb-12 sm:pb-24">
+      <section className="bg-white py-12 sm:py-24">
         <ScrollReveal>
           <div className="site-shell grid gap-8 lg:grid-cols-[0.9fr_1.1fr] lg:items-center lg:gap-10">
             <div>
