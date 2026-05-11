@@ -74,6 +74,7 @@ export function Navigation() {
                 src="/images/logo/android-chrome-512x512.png"
                 alt="Alpha Logistics Logo"
                 fill
+                sizes="32px"
                 className={`object-cover transition-all duration-300 ${isOpen ? "brightness-0 invert" : ""}`}
               />
             </div>
